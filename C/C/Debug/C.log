@@ -1,2 +1,36 @@
 ﻿  B5.c
+C:\Users\USER\Desktop\BOJ\C\C\B5.c(12,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B5.c(28,10): warning C4098: 'BOJ2557': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B5.c(36,10): warning C4098: 'BOJ1000': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B5.c(44,10): warning C4098: 'BOJ1001': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B5.c(51,10): warning C4098: 'BOJ10718': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B5.c(59,10): warning C4098: 'BOJ10998': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B5.c(71,10): warning C4098: 'BOJ10869': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B5.c(82,10): warning C4098: 'BOJ10430': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B5.c(92,10): warning C4098: 'BOJ10172': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B5.c(101,10): warning C4098: 'BOJ10171': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B5.c(113,10): warning C4098: 'BOJ8393': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B5.c(121,10): warning C4098: 'BOJ11654': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B5.c(129,10): warning C4098: 'BOJ2558': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B5.c(136,10): warning C4098: 'BOJ7287': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B5.c(144,10): warning C4098: 'BOJ2475': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B5.c(195,10): warning C4098: 'BOJ10757': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B5.c(237,10): warning C4098: 'BOJ10699': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B5.c(243,10): warning C4098: 'BOJ11942': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B5.c(251,10): warning C4098: 'BOJ5337': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B5.c(260,10): warning C4098: 'BOJ2845': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B5.c(276,10): warning C4098: 'BOJ9653': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B5.c(291,10): warning C4098: 'BOJ5339': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B5.c(299,10): warning C4098: 'BOJ3003': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B5.c(310,10): warning C4098: 'BOJ9654': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B5.c(320,10): warning C4098: 'BOJ10926': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B5.c(330,10): warning C4098: 'BOJ5554': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B5.c(348,10): warning C4098: 'BOJ10170': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B5.c(356,10): warning C4098: 'BOJ5522': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B5.c(372,10): warning C4098: 'BOJ14645': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B5.c(380,10): warning C4098: 'BOJ16394': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B5.c(388,10): warning C4098: 'BOJ15894': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B5.c(399,10): warning C4098: 'BOJ15962': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B5.c(405,10): warning C4098: 'BOJ15733': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B5.c(424,10): warning C4098: 'BOJ16430': 'void' 함수에서 값을 반환하고 있습니다.
   C.vcxproj -> C:\Users\USER\Desktop\BOJ\C\Debug\C.exe
