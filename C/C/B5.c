@@ -4,22 +4,10 @@
 #include <string.h>
 
 int main(void) {
-	char a[10001];
-	char b[10001];
-	char subresult[10002] = { '0' };
-	int temp = 0;
-	scanf("%s %s", &a, &b);
-	for (int i = 0; i < strlen(a > b ? a : b); i++) {
-		temp = (int)a[i] - '0' + (int)b[i] - '0' + (int)subresult[i] - '0';
-		printf("%d\n%d\n%d\n", (int)a[i] - '0', (int)b[i] - '0', (int)subresult[i] - '0');
-		if (temp > 10) {
-			subresult[i + 1] = temp / 10 + '0';
-			subresult[i] = temp % 10 + '0';
-		}
-		else
-			subresult[i] = temp + '0';
-	}
-	printf("%s", subresult);
+	char a[5];
+	scanf("%s", &a);
+	printf("%d", a[0]);
+	return 0;
 }
 
 //https://www.acmicpc.net/problem/2557
@@ -421,5 +409,116 @@ void BOJ16430(void) {
 	}
 	printf("%d %d", temp, b);
 
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/15964
+void BOJ15964(void) {
+	int a, b;
+	scanf("%d %d", &a, &b);
+	printf("%d", (a + b) * (a - b));
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/18108
+void BOJ18108(void) {
+	int a;
+	scanf("%d", &a);
+	printf("%d", a - 543);
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/15727
+void BOJ15727(void) {
+	int a, temp1 = 0;
+	scanf("%d", &a);
+	if (a < 5) {
+		printf("1");
+	}
+	else {
+		temp1 = a / 5;
+		if (a % 5 != 0)
+			temp1 += 1;
+		printf("%d", temp1);
+	}
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/17295
+void BOJ17295(void) {
+	char a[10000];
+	scanf("%s", &a);
+	printf("Avengers: Endgame");
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/16170
+#include <time.h>
+void BOJ16170(void) {
+	time_t t = time(NULL);
+	struct tm tm = *localtime(&t);
+
+	printf("%d\n%02d\n%02d", tm.tm_year + 1900, tm.tm_mon + 1, tm.tm_mday);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/14652
+void BOJ14652(void) {
+	int a, b, c;
+	scanf("%d %d %d", &a, &b, &c);
+	printf("%d %d", c / b, c % b);
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/6749
+void BOJ6749(void) {
+	int a, b;
+	scanf("%d %d", &a, &b);
+	printf("%d", 2 * b - a);
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/8370
+void BOJ8370(void) {
+	int a, b, c, d;
+	scanf("%d %d %d %d", &a, &b, &c, &d);
+	printf("%d", a * b + c * d);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/17256
+void BOJ17256(void) {
+	int a, b, c, d, e, f;
+	scanf("%d %d %d %d %d %d", &a, &b, &c, &d, &e, &f);
+	printf("%d %d %d", d - c, e / b, f - a);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/17496
+void BOJ17496(void) {
+	int a, b, c, d;
+	scanf("%d %d %d %d", &a, &b, &c, &d);
+	printf("%d", (a - 1) / b * c * d);
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/15439
+void BOJ15439(void) {
+	int a;
+	scanf("%d", &a);
+	printf("%d", a * a - a);
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/20492
+void BOJ20492(void) {
+	long a;
+	scanf("%ld", &a);
+	printf("%ld %ld", a * 78 / 100, a * 80 / 100 + a * 20 / 100 * 78 / 100);
 	return 0;
 }
