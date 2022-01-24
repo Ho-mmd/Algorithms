@@ -3,11 +3,113 @@
 #include <stdio.h>
 #include <string.h>
 
+void rever(char *arr) {
+	for (int i = 0; i < strlen(arr) / 2; i++) {
+		char temp = arr[strlen(arr) - 1 - i];
+		arr[strlen(arr) - 1 - i] = arr[i];
+		arr[i] = temp;
+	}
+
+	return;
+}
+
+char plus(char* numArr1, char* numArr2, char *sum) {
+	int temp = 0;
+
+	rever(numArr1);
+	rever(numArr2);
+
+	int bigNum = strlen(numArr1) > strlen(numArr2) ? strlen(numArr1) : strlen(numArr2);
+	int flag = strlen(numArr1) > strlen(numArr2) ? 0 : 1;
+
+	for (int i = 0; i < bigNum; i++) {
+		if (flag == 0) {
+			if (i >= strlen(numArr2))
+				numArr2[i] = '0';
+		}
+		else {
+			if (i >= strlen(numArr1))
+				numArr1[i] = '0';
+		}
+
+		if ((int)numArr1[i] - '0' + (int)numArr2[i] - '0' + temp < 10) {
+			sum[i] = (int)numArr1[i] + (int)numArr2[i] - '0' + temp;
+			temp = 0;
+		}
+		else {
+			sum[i] = (int)numArr1[i] + (int)numArr2[i] - 10 + temp - '0';
+			temp = 1;
+			if (i == (bigNum - 1))
+				sum[i + 1] = temp + '0';
+		}
+	}
+
+	rever(sum);
+
+	return sum;
+}
+
+//양수만 가능
+char minus(char* numArr1, char* numArr2, char* sum) {
+	int flag = 0;
+
+	rever(numArr1);
+	rever(numArr2);
+
+	int arr1Length = strlen(numArr1);
+	int arr2Length = strlen(numArr2);
+	int bigNum = arr1Length > arr2Length ? arr1Length : arr2Length;
+	
+	if (arr1Length == arr2Length)
+		flag = 2;
+	else
+		flag = arr1Length > arr2Length ? 0 : 1;
+
+
+	if (flag == 0) {
+		for (int k = arr2Length; k < bigNum; k++) {
+			numArr2[k] = '0';
+		}
+	}
+	else if (flag == 1) {
+		for (int k = arr1Length; k < bigNum; k++) {
+			numArr1[k] = '0';
+		}
+	}
+	
+	for (int i = 0; i < bigNum; i++) {
+		if ((int)numArr1[i] - '0' - ((int)numArr2[i] - '0') < 0) {
+			int j = i;
+			while (numArr1[j + 1] == '0') {
+				numArr1[j + 1] = '9';
+				j++;
+			}
+			numArr1[j + 1] = (int)numArr1[j + 1] - 1;
+			sum[i] = (int)numArr1[i] - (int)numArr2[i] + 10 + '0';
+		}
+		else {
+			sum[i] = (int)numArr1[i] - (int)numArr2[i] + '0';
+		}
+	}
+
+	if (sum[strlen(sum) - 1] == '0')
+		sum[strlen(sum) - 1] = '\0';
+
+	rever(sum);
+
+	return sum;
+	
+}
+
 int main(void) {
-	char a[5];
-	scanf("%s", &a);
-	printf("%d", a[0]);
-	return 0;
+	char a[10001];
+	char b[10001];
+	char sum[10002] = { '0' };
+
+	scanf("%s%s", &a, &b);
+
+	minus(a, b, sum);
+	printf("%s", sum);
 }
 
 //https://www.acmicpc.net/problem/2557
@@ -522,3 +624,42 @@ void BOJ20492(void) {
 	printf("%ld %ld", a * 78 / 100, a * 80 / 100 + a * 20 / 100 * 78 / 100);
 	return 0;
 }
+
+//https://www.acmicpc.net/problem/18301
+void BOJ18301(void) {
+	int a, b, c;
+	scanf("%d%d%d", &a, &b, &c);
+	printf("%d", (a + 1) * (b + 1) / (c + 1) - 1);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/20254
+void BOJ20254(void) {
+	int a, b, c, d;
+	scanf("%d %d %d %d", &a, &b, &c, &d);
+	printf("%d", 56 * a + 24 * b + 14 * c + 6 * d);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/21300
+void BOJ21300(void) {
+	int a, sum = 0;
+	for (int i = 0; i < 6; i++) {
+		scanf("%d", &a);
+		sum += a;
+	}
+	printf("%d", 5 * sum);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/23234
+void BOJ23234(void) {
+	printf("The world says hello!");
+
+	return 0;
+}
+
+
