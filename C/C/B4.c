@@ -454,3 +454,82 @@ void BOJ11948() {
 	printf("%d", sum - min1 - min2);
 	return 0;
 }
+
+//https://www.acmicpc.net/problem/17362
+void BOJ17362() {
+	int a;
+	scanf("%d", &a);
+	int ans = a % 8;
+	if (ans == 0 || ans == 2)
+		printf("2");
+	else if (ans == 3 || ans == 7)
+		printf("3");
+	else if (ans == 4 || ans == 6)
+		printf("4");
+	else if (ans == 5)
+		printf("5");
+	else
+		printf("1");
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/3004
+void BOJ3004() {
+	int a;
+	scanf("%d", &a);
+
+	switch (a) {
+	case 1:
+		printf("2");
+		break;
+	default:
+		printf("%d", (a / 2 + 1) * (a - a / 2 + 1));
+	}
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/10179
+void BOJ10179() {
+	int a, i = 0;
+	double price[3];
+	scanf("%d", &a);
+	for (i = 0; i < a; i++) {
+		scanf("%lf", &price[i]);
+	}
+	for (i = 0; i < a; i++) {
+		printf("$%.2lf\n", price[i] * 0.8);
+	}
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/17388
+void BOJ17388() {
+	int a[3];
+	int min = 100;
+	int flag = 0;
+	for (int i = 0; i < 3; i++) {
+		scanf("%d", &a[i]);
+		if (min > a[i]) {
+			min = a[i];
+			flag = i;
+		}
+	}
+	if (a[0] + a[1] + a[2] >= 100)
+		printf("OK");
+	else
+		switch (flag) {
+		case 0:
+			printf("Soongsil");
+			break;
+		case 1:
+			printf("Korea");
+			break;
+		case 2:
+			printf("Hanyang");
+			break;
+		}
+
+	return 0;
+}
