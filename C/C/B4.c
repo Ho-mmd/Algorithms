@@ -533,3 +533,58 @@ void BOJ17388() {
 
 	return 0;
 }
+
+//https://www.acmicpc.net/problem/16486
+void BOJ16486() {
+	int a, b;
+	double square = 0, circle = 0;
+	scanf("%d %d", &a, &b);
+	square = a * 2.0;
+	circle = b * 2 * 3.141592;
+	printf("%.6lf", square + circle);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/4299
+void BOJ4299() {
+	int a, b;
+	int t1 = 0, t2 = 0;
+	scanf("%d %d", &a, &b);
+	t1 = (a + b) / 2;
+	t2 = a - t1;
+	if (t1 < 0 || t2 < 0 || ((a + b) % 2 != 0))
+		printf("-1");
+	else if (t1 > t2)
+		printf("%d %d", t1, t2);
+	else
+		printf("%d %d", t2, t1);
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/15873
+void BOJ15873() {
+	char a[5];
+	int sum = 0;
+	scanf("%s", &a);
+	if (a[1] == '0' && a[3] == '0')
+		sum = 20;
+	else if (a[1] == '0')
+		sum = 10 + (int)a[2] - '0';
+	else if (a[2] == '0')
+		sum = (int)a[0] - '0' + 10;
+	else
+		sum = (int)a[0] - '0' + (int)a[1] - '0';
+	printf("%d", sum);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/14924
+void BOJ14924() {
+	int a, b, c;
+	scanf("%d%d%d", &a, &b, &c);
+	printf("%d", c / (a * 2) * b);
+
+	return 0;
+}
