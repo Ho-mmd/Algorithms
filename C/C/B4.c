@@ -588,3 +588,64 @@ void BOJ14924() {
 
 	return 0;
 }
+
+//https://www.acmicpc.net/problem/13866
+void BOJ13866() {
+	int a, b, c, d;
+	scanf("%d%d%d%d", &a, &b, &c, &d);
+	int res = (d + a) - (b + c);
+	if (res < 0)
+		printf("%d", -res);
+	else
+		printf("%d", res);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/16431
+#include <math.h>
+void BOJ16431() {
+	int a, b, c, d, e, f;
+	double bessie = 0, daisy = 0;
+	scanf("%d%d%d%d%d%d", &a, &b, &c, &d, &e, &f);
+	bessie = abs(e - c) + abs(f - d);
+	daisy = sqrt(pow((e - a), 2) + pow((f - b), 2));
+
+	if (daisy == bessie)
+		printf("tie");
+	else if (daisy > bessie)
+		printf("daisy");
+	else
+		printf("bessie");
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/14470
+void BOJ14470() {
+	int a, b, c, d, e;
+	scanf("%d%d%d%d%d", &a, &b, &c, &d, &e);
+	if (a > 0) {
+		printf("%d", (b - a) * e);
+	}
+	else {
+		printf("%d", -a * c + d + b * e);
+	}
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/19944
+void BOJ19944() {
+	int a, b;
+	scanf("%d%d", &a, &b);
+	if (b == 1 || b == 2)
+		printf("NEWBIE!");
+	else if (b <= a)
+		printf("OLDBIE!");
+	else
+		printf("TLE!");
+
+	return 0;
+}
+
+
