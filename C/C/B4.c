@@ -5,6 +5,49 @@
 int main(void) {
 	
 }
+//int main(void) {
+//	char a[31], b[31], c[70], temp0[70], temp1[70];
+//	int flag = 0;
+//	scanf("%s%s", &a, &b);
+//	for (int i = 0; i < strlen(b); i++) {
+//		if (b[i] == '1') {
+//			if (flag == 0) {
+//				strcpy(temp0, a);
+//				for (int j = 0; j < i; j++) {
+//					temp0[strlen(temp0)] = '0';
+//				}
+//			}	
+//			else if (flag == 1) {
+//				strcpy(temp1, a);
+//				for (int j = 0; j < i; j++) {
+//					temp1[strlen(temp1)] = '0';
+//				}
+//			}
+//			
+//			flag++;
+//
+//			if (flag == 2) {
+//				flag = 1;
+//			}
+//		}
+//	}
+//}
+//
+//void plus(char* temp0, char* temp1) {
+//	reverse(temp0);
+//	reverse(temp1);
+//
+//
+//}
+//
+//void reverse(char* temp) {
+//	char tmp;
+//	for (int i = 0; i < strlen(temp) / 2; i++) {
+//		tmp = temp[i];
+//		temp[i] = temp[strlen(temp) - 1];
+//		temp[strlen(temp) - 1] = temp[i];
+//	}
+//}
 
 //https://www.acmicpc.net/problem/1008
 void BOJ1008() {
@@ -647,5 +690,120 @@ void BOJ19944() {
 
 	return 0;
 }
+
+//https://www.acmicpc.net/problem/20499
+void BOJ20499() {
+	int a, b, c;
+	scanf("%d/%d/%d", &a, &b, &c);
+	if (a + c < b || b == 0)
+		printf("hasu");
+	else
+		printf("gosu");
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/15726
+void BOJ15726() {
+	long long a, b, c, d, e;
+	scanf("%lld%lld%lld", &a, &b, &c);
+	d = (double)(a * b) / c;
+	e = ((double)a / b) * c;
+
+	printf("%lld", d > e ? d : e);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/14935
+void BOJ14935() {
+	char a[101];
+	scanf("%s", a);
+
+	printf("FA");
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/15700
+void BOJ15700() {
+	long long a, b;
+	scanf("%lld%lld", &a, &b);
+	printf("%lld", a * b / 2);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/11549
+void BOJ11549() {
+	int a[6];
+	int count = 0;
+	for (int i = 0; i < 6; i++) {
+		scanf("%d", &a[i]);
+		if (a[0] == a[i])
+			count++;
+	}
+	printf("%d", count - 1);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/16204
+void BOJ16204() {
+	int a, b, c;
+	int oc = 0, xc = 0;
+	scanf("%d%d%d", &a, &b, &c);
+	oc = b > c ? c : b;
+	xc = a - (b > c ? b : c);
+	printf("%d", oc + xc);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/13136
+void BOJ13136() {
+	long long a, b, c;
+	long long row = 0, col = 0;;
+	scanf("%lld%lld%lld", &a, &b, &c);
+	if (a % c != 0)
+		row = a / c + 1;
+	else
+		row = a / c;
+
+	if (b % c != 0)
+		col = b / c + 1;
+	else
+		col = b / c;
+
+	printf("%lld", row * col);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/16199
+void BOJ16199() {
+	int a, b, c, d, e, f;
+	scanf("%d%d%d%d%d%d", &a, &b, &c, &d, &e, &f);
+	if (d > a) {
+		if (e == b) {
+			if (f >= c) {
+				printf("%d\n", d - a);
+			}
+			else
+				printf("%d\n", d - a - 1);
+		}
+		else if (e > b)
+			printf("%d\n", d - a);
+		else
+			printf("%d\n", d - a - 1);
+	}
+	else
+		printf("%d\n", 0);
+
+	printf("%d\n", d - a + 1);
+	printf("%d\n", d - a);
+
+	return 0;
+}
+
 
 
