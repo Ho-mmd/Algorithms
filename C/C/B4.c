@@ -1,9 +1,6 @@
 # define _CRT_SECURE_NO_WARNINGS
 
 #include <stdio.h>
-#include <math.h>
-
-#define PI 3.14159265
 
 int main(void) {
 	
@@ -861,6 +858,8 @@ void BOJ15921() {
 }
 
 //https://www.acmicpc.net/problem/14264
+#include <math.h>
+#define PI 3.14159265
 void BOJ14264() {
 	int a;
 	scanf("%d", &a);
