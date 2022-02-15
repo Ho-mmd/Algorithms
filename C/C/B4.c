@@ -1,6 +1,9 @@
 # define _CRT_SECURE_NO_WARNINGS
 
 #include <stdio.h>
+#include <math.h>
+
+#define PI 3.14159265
 
 int main(void) {
 	
@@ -801,6 +804,67 @@ void BOJ16199() {
 
 	printf("%d\n", d - a + 1);
 	printf("%d\n", d - a);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/17009
+void BOJ17009() {
+	int a[6];
+	int sumA = 0, sumB = 0;
+	for (int i = 0; i < 6; i++) {
+		scanf("%d", &a[i]);
+	}
+	sumA = a[0] * 3 + a[1] * 2 + a[2];
+	sumB = a[3] * 3 + a[4] * 2 + a[5];
+
+	if (sumA > sumB)
+		printf("A");
+	else if (sumB > sumA)
+		printf("B");
+	else printf("T");
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/19698
+void BOJ19698() {
+	int a, b, c, d;
+	int max;
+	scanf("%d%d%d%d", &a, &b, &c, &d);
+	max = (b / d) * (c / d);
+	if (max > a)
+		printf("%d", a);
+	else
+		printf("%d", max);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/15921
+void BOJ15921() {
+	int a, b, sum = 0;
+	double temp = 0;
+	scanf("%d", &a);
+
+	for (int i = 0; i < a; i++) {
+		scanf("%d", &b);
+		sum += b;
+		temp += b * (1.0 / a);
+	}
+
+	if (a == 0 || temp == 0)
+		printf("divide by zero");
+	else printf("1.00");
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/14264
+void BOJ14264() {
+	int a;
+	scanf("%d", &a);
+	printf("%.9lf", 0.5 * pow(a, 2) * sin(60 * PI / 180));
 
 	return 0;
 }
