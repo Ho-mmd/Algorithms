@@ -868,5 +868,80 @@ void BOJ14264() {
 	return 0;
 }
 
+//https://www.acmicpc.net/problem/13895
+void BOJ13895() {
+	char a[20];
+	gets(a);
+	if ((int)a[0] + (int)a[4] - '0' == (int)a[8])
+		printf("YES");
+	else
+		printf("NO");
 
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/5928
+void BOJ5928() {
+	int a, b, c;
+	int temp1, temp2;
+	scanf("%d %d %d", &a, &b, &c);
+	if (a <= 11) {
+		if (a < 11)
+			printf("-1");
+		else {
+			if (b < 11)
+				printf("-1");
+			else if (b == 11) {
+				if (c < 11)
+					printf("-1");
+				else {
+					printf("%d", c - 11);
+				}
+			}
+			else {
+				printf("%d", 60 * b + c - (60 * 11 + 11));
+			}
+		}
+	}
+	else {
+		temp1 = a * 1440 + b * 60 + c;
+		temp2 = 11 * 1440 + 11 * 60 + 11;
+		printf("%d", temp1 - temp2);
+	}
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/6778
+void BOJ6778() {
+	int a, b, flag = 0;
+	scanf("%d %d", &a, &b);
+	if (a >= 3 && b <= 4)
+		printf("TroyMartian\n");
+	if (a <= 6 && b >= 2)
+		printf("VladSaturnian\n");
+	if (a <= 2 && b <= 3)
+		printf("GraemeMercurian\n");
+	if (flag == 0)
+		printf("");
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/14173
+void BOJ14173() {
+	int a[8];
+	int maxx, minx, maxy, miny, sq;
+	for (int i = 0; i < 8; i++) {
+		scanf("%d", &a[i]);
+	}
+	maxx = a[2] > a[6] ? a[2] : a[6];
+	minx = a[0] < a[4] ? a[0] : a[4];
+	maxy = a[3] > a[7] ? a[3] : a[7];
+	miny = a[1] < a[5] ? a[1] : a[5];
+	sq = maxx - minx > maxy - miny ? maxx - minx : maxy - miny;
+	printf("%d", sq * sq);
+
+	return 0;
+}
 
