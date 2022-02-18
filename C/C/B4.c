@@ -945,3 +945,63 @@ void BOJ14173() {
 	return 0;
 }
 
+//https://www.acmicpc.net/problem/17863
+void BOJ17863() {
+	int a;
+	scanf("%d", &a);
+	if (a >= 5550000 && a <= 5559999)
+		printf("YES");
+	else
+		printf("NO");
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/15059
+void BOJ15059() {
+	int a, b, c, d, e, f;
+	int total = 0;
+	scanf("%d %d %d %d %d %d", &a, &b, &c, &d, &e, &f);
+	if (d > a)
+		total += d - a;
+	if (e > b)
+		total += e - b;
+	if (f > c)
+		total += f - c;
+
+	printf("%d", total);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/6763
+void BOJ6763() {
+	int a, b;
+	scanf("%d %d", &a, &b);
+	if (a >= b)
+		printf("Congratulations, you are within the speed limit!");
+	else {
+		if (b - a <= 20)
+			printf("You are speeding and your fine is $100.");
+		else if (b - a <= 30)
+			printf("You are speeding and your fine is $270.");
+		else
+			printf("You are speeding and your fine is $500.");
+	}
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/16017
+void BOJ16017() {
+	int a[4];
+	for (int i = 0; i < 4; i++) {
+		scanf("%d", &a[i]);
+	}
+	if (a[0] >= 8 && a[3] >= 8 && a[1] == a[2])
+		printf("ignore");
+	else
+		printf("answer");
+
+	return 0;
+}
