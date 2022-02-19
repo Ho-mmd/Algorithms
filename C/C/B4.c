@@ -1,7 +1,7 @@
 # define _CRT_SECURE_NO_WARNINGS
 
 #include <stdio.h>
-
+#include <math.h>
 int main(void) {
 	
 }
@@ -1002,6 +1002,71 @@ void BOJ16017() {
 		printf("ignore");
 	else
 		printf("answer");
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/6764
+void BOJ6764() {
+	int a[4], flag = 0;;
+	for (int i = 0; i < 4; i++) {
+		scanf("%d", &a[i]);
+		if (i == 0)
+			flag += 1;
+		else {
+			if (a[i] > a[i - 1])
+				flag += 2;
+			else if (a[i] < a[i - 1])
+				flag -= 1;
+			else
+				flag += 0;
+		}
+	}
+	if (flag == 7)
+		printf("Fish Rising");
+	else if (flag == -2)
+		printf("Fish Diving");
+	else if (flag == 1)
+		printf("Fish At Constant Depth");
+	else
+		printf("No Fish");
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/18005
+void BOJ18005() {
+	long long a;
+	scanf("%lld", &a);
+	if (a % 2 == 1)
+		printf("0");
+	else if (a % 4 == 0)
+		printf("2");
+	else
+		printf("1");
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/15610
+void BOJ15610() {
+	long long a;
+	double b;
+	scanf("%lld", &a);
+	b = sqrt(a);
+	printf("%.6lf", b * 4);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/23825
+void BOJ23825() {
+	int a, b, re;
+	scanf("%d%d", &a, &b);
+	a = a / 2;
+	b = b / 2;
+	re = a < b ? a : b;
+	printf("%d", re);
 
 	return 0;
 }
