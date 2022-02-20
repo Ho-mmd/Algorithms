@@ -1,9 +1,8 @@
 # define _CRT_SECURE_NO_WARNINGS
 
 #include <stdio.h>
-#include <math.h>
 int main(void) {
-	
+
 }
 //int main(void) {
 //	char a[31], b[31], c[70], temp0[70], temp1[70];
@@ -1049,6 +1048,7 @@ void BOJ18005() {
 }
 
 //https://www.acmicpc.net/problem/15610
+#include <math.h>
 void BOJ15610() {
 	long long a;
 	double b;
@@ -1067,6 +1067,66 @@ void BOJ23825() {
 	b = b / 2;
 	re = a < b ? a : b;
 	printf("%d", re);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/16600
+#include <math.h>
+void BOJ16600() {
+	long long a;
+	double b;
+	scanf("%lld", &a);
+	b = sqrt(a);
+	printf("%.6lf", b * 4);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/19602
+void BOJ19602() {
+	int a, b, c, re;
+	scanf("%d%d%d", &a, &b, &c);
+	re = a + 2 * b + 3 * c;
+	if (re >= 10)
+		printf("happy");
+	else
+		printf("sad");
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/21598
+void BOJ21598() {
+	int a;
+	scanf("%d", &a);
+	for (int i = 0; i < a; i++) {
+		printf("SciComLove\n");
+	}
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/14038
+void BOJ14038() {
+	int flag = 0;
+	char b = 'W';
+	for (int i = 0; i < 6; i += 1) {
+		char a;
+		scanf("%c", &a);
+		if ((int)a == (int)b)
+			flag += 1;
+		getchar();
+	}
+
+	if (flag == 5 || flag == 6)
+		printf("1");
+	else if (flag == 3 || flag == 4)
+		printf("2");
+	else if (flag == 1 || flag == 2)
+		printf("3");
+	else
+		printf("-1");
 
 	return 0;
 }
