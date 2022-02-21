@@ -18,7 +18,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="B4.c">
+    <ClCompile Include="B3.c">
       <Filter>Bronze</Filter>
     </ClCompile>
   </ItemGroup>
