@@ -1,5 +1,10 @@
 ﻿  B3.c
-C:\Users\USER\Desktop\BOJ\C\C\B3.c(26,10): warning C4098: 'BOJ2739': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\B3.c(39,10): warning C4098: 'BOJ2438': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\B3.c(49,10): warning C4098: 'BOJ2741': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B3.c(23,10): warning C4098: 'BOJ2739': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B3.c(36,10): warning C4098: 'BOJ2438': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B3.c(46,10): warning C4098: 'BOJ2741': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B3.c(62,10): warning C4098: 'BOJ2439': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B3.c(72,10): warning C4098: 'BOJ2742': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B3.c(99,10): warning C4098: 'BOJ10950': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B3.c(124,10): warning C4098: 'BOJ10871': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\B3.c(140,10): warning C4098: 'BOJ2884': 'void' 함수에서 값을 반환하고 있습니다.
   C.vcxproj -> C:\Users\USER\Desktop\BOJ\C\Debug\C.exe
