@@ -145,4 +145,60 @@ void BOJ10952() {
 	return 0;
 }
 
+//https://www.acmicpc.net/problem/11021
+void BOJ11021() {
+	int a, flag = 1;
+	scanf("%d", &a);
+	for (int i = 0; i < a; i++) {
+		int b, c;
+		scanf("%d %d", &b, &c);
+		printf("Case #%d: %d\n", flag, b + c);
+		flag++;
+	}
+	return 0;
+}
 
+//https://www.acmicpc.net/problem/11022
+void BOJ11022() {
+	int a, flag = 1;
+	scanf("%d", &a);
+	for (int i = 0; i < a; i++) {
+		int b, c;
+		scanf("%d %d", &b, &c);
+		printf("Case #%d: %d + %d = %d\n", flag, b, c, b + c);
+		flag++;
+	}
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/10818
+void BOJ10818() {
+	int a;
+	int big, small;
+	scanf("%d", &a);
+	for (int i = 0; i < a; i++) {
+		int c;
+		scanf("%d", &c);
+		if (i == 0) {
+			big = c;
+			small = c;
+		}
+		else {
+			big = big > c ? big : c;
+			small = small < c ? small : c;
+		}
+	}
+	printf("%d %d", small, big);
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/10951
+void BOJ10951() {
+	int a, b;
+
+	while (scanf("%d %d", &a, &b) != EOF) {
+		printf("%d\n", a + b);
+	}
+
+	return 0;
+}
