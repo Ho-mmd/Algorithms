@@ -202,3 +202,65 @@ void BOJ10951() {
 
 	return 0;
 }
+
+//https://www.acmicpc.net/problem/10817
+void BOJ10817() {
+	int a[3];
+	for (int i = 0; i < 3; i++) {
+		scanf("%d", &a[i]);
+	}
+	if (a[0] >= a[1] && a[1] >= a[2])
+		printf("%d", a[1]);
+	else if (a[2] >= a[1] && a[1] >= a[0])
+		printf("%d", a[1]);
+	else if (a[0] >= a[2] && a[2] >= a[1])
+		printf("%d", a[2]);
+	else if (a[1] >= a[2] && a[2] >= a[0])
+		printf("%d", a[2]);
+	else
+		printf("%d", a[0]);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/10872
+void BOJ10872() {
+	int a, fac = 1;
+	scanf("%d", &a);
+	for (int i = a; i > 0; i--) {
+		fac *= i;
+	}
+	printf("%d", fac);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/2440
+void BOJ2440() {
+	int a;
+	scanf("%d", &a);
+	for (int i = a; i > 0; i--) {
+		for (int j = i; j > 0; j--) {
+			printf("*");
+		}
+		printf("\n");
+	}
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/2441
+void BOJ2441() {
+	int a;
+	scanf("%d", &a);
+	for (int i = a; i > 0; i--) {
+		for (int j = i; j < a; j++) {
+			printf(" ");
+		}
+		for (int k = i; k > 0; k--) {
+			printf("*");
+		}
+		printf("\n");
+	}
+	return 0;
+}
