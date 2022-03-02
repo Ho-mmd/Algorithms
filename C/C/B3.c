@@ -264,3 +264,71 @@ void BOJ2441() {
 	}
 	return 0;
 }
+
+//https://www.acmicpc.net/problem/10250
+void BOJ10250() {
+	int a;
+	scanf("%d", &a);
+	for (int i = 0; i < a; i++) {
+		int H, W, N;
+		scanf("%d %d %d", &H, &W, &N);
+		if (N % H == 0) {
+			printf("%d", H);
+			if (N / H >= 10)
+				printf("%d\n", N / H);
+			else
+				printf("0%d\n", N / H);
+		}
+		else {
+			printf("%d", N % H);
+			if (N / H + 1 >= 10)
+				printf("%d\n", N / H + 1);
+			else
+				printf("0%d\n", N / H + 1);
+		}
+	}
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/11718
+void BOJ11718() {
+	char a[101];
+	while (gets(a)) {
+		if (a[0] == '/0')
+			break;
+		else
+			puts(a);
+	}
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/1085
+void BOJ1085() {
+	int a, b, c, d, xsh = 0, ysh = 0;
+	scanf("%d%d%d%d", &a, &b, &c, &d);
+	xsh = c - a;
+	ysh = d - b;
+	xsh = xsh < a ? xsh : a;
+	ysh = ysh < b ? ysh : b;
+	if (xsh > ysh)
+		printf("%d", ysh);
+	else
+		printf("%d", xsh);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/4153
+void BOJ4153() {
+	while (1) {
+		int a, b, c;
+		scanf("%d%d%d", &a, &b, &c);
+		if (a == 0 && b == 0 && c == 0)
+			break;
+		else if (pow(a, 2) == pow(b, 2) + pow(c, 2) || pow(b, 2) == pow(a, 2) + pow(c, 2) || pow(c, 2) == pow(b, 2) + pow(a, 2))
+			printf("right\n");
+		else
+			printf("wrong\n");
+	}
+	return 0;
+}
