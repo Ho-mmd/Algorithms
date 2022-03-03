@@ -332,3 +332,98 @@ void BOJ4153() {
 	}
 	return 0;
 }
+
+//https://www.acmicpc.net/problem/2442
+void BOJ2442() {
+	int n, flag = 1;;
+	scanf("%d", &n);
+
+	for (int i = n; i > 0; i--) {
+		for (int j = i - 1; j > 0; j--) {
+			printf(" ");
+		}
+		for (int k = 0; k < flag; k++) {
+			printf("*");
+		}
+		flag += 2;
+		printf("\n");
+	}
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/2446
+void BOJ2446() {
+	int n, flag = 1;;
+	scanf("%d", &n);
+
+	for (int i = 0; i < n - 1; i++) {
+		for (int j = 0; j < i; j++) {
+			printf(" ");
+		}
+		for (int k = 2 * (n - i) - 1; k > 0; k--) {
+			printf("*");
+		}
+		printf("\n");
+	}
+	for (int i = n; i > 0; i--) {
+		for (int j = i - 1; j > 0; j--) {
+			printf(" ");
+		}
+		for (int k = 0; k < flag; k++) {
+			printf("*");
+		}
+		flag += 2;
+		printf("\n");
+	}
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/2747
+void BOJ2747() {
+	int n;
+	scanf("%d", &n);
+
+	long long b = pibo(n);
+	printf("%lld", b);
+
+	return 0;
+}
+int pibo(int n) {
+	long long tmp1 = 0, tmp2 = 1, ans = 0;
+
+	if (n == 0)
+		return 0;
+	else if (n == 1)
+		return 1;
+	else {
+		for (int i = 1; i < n; i++) {
+			ans = tmp1 + tmp2;
+			tmp1 = tmp2;
+			tmp2 = ans;
+		}
+	}
+	return ans;
+}
+
+//https://www.acmicpc.net/problem/3009
+void BOJ3009() {
+	int a[6];
+	for (int i = 0; i < 6; i++) {
+		scanf("%d", &a[i]);
+	}
+	if (a[0] == a[2])
+		printf("%d ", a[4]);
+	else if (a[0] == a[4])
+		printf("%d ", a[2]);
+	else
+		printf("%d ", a[0]);
+	if (a[1] == a[3])
+		printf("%d", a[5]);
+	else if (a[1] == a[5])
+		printf("%d", a[3]);
+	else
+		printf("%d", a[1]);
+
+	return 0;
+}
