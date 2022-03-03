@@ -427,3 +427,96 @@ void BOJ3009() {
 
 	return 0;
 }
+
+//https://www.acmicpc.net/problem/3053
+# define pi 3.141592653589793
+void BOJ3053() {
+	int r;
+	scanf("%d", &r);
+	printf("%.6lf\n", r * r * pi);
+	printf("%.6lf\n", 4 * r * r / 2.0);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/2523
+void BOJ2523() {
+	int n;
+	scanf("%d", &n);
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j <= i; j++) {
+			printf("*");
+		}
+		printf("\n");
+	}
+	for (int i = n - 1; i > 0; i--) {
+		for (int j = i; j > 0; j--) {
+			printf("*");
+		}
+		printf("\n");
+	}
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/2445
+void BOJ2445() {
+	int n;
+	scanf("%d", &n);
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j <= i; j++) {
+			printf("*");
+		}
+		for (int k = 2 * (n - i) - 2; k > 0; k--) {
+			printf(" ");
+		}
+		for (int j = 0; j <= i; j++) {
+			printf("*");
+		}
+		printf("\n");
+	}
+	for (int i = n - 1; i > 0; i--) {
+		for (int j = i; j > 0; j--) {
+			printf("*");
+		}
+		for (int k = 2 * (n - i); k > 0; k--) {
+			printf(" ");
+		}
+		for (int j = i; j > 0; j--) {
+			printf("*");
+		}
+		printf("\n");
+	}
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/2444
+void BOJ2444() {
+	int n, flag = 1;
+	scanf("%d", &n);
+	for (int i = 0; i < n; i++) {
+		for (int j = n - i - 1; j > 0; j--) {
+			printf(" ");
+		}
+		for (int k = 0; k < flag; k++) {
+			printf("*");
+		}
+		flag += 2;
+		printf("\n");
+	}
+
+	flag -= 4;
+
+	for (int i = n - 1; i > 0; i--) {
+		for (int j = 0; n - i > j; j++) {
+			printf(" ");
+		}
+		for (int k = flag; k > 0; k--) {
+			printf("*");
+		}
+		flag -= 2;
+		printf("\n");
+	}
+
+	return 0;
+}
+
