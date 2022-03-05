@@ -520,3 +520,76 @@ void BOJ2444() {
 	return 0;
 }
 
+//https://www.acmicpc.net/problem/2443
+void BOJ2443() {
+	int n;
+	scanf("%d", &n);
+	int flag = 2 * n - 1;
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < i; j++) {
+			printf(" ");
+		}
+		for (int k = 0; k < flag; k++) {
+			printf("*");
+		}
+		flag -= 2;
+		printf("\n");
+	}
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/2163
+void BOJ2163() {
+	int a, b;
+	scanf("%d %d", &a, &b);
+	printf("%d", a * b - 1);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/2490
+void BOJ2490() {
+	for (int i = 0; i < 3; i++) {
+		int flag = 0;
+		for (int j = 0; j < 4; j++) {
+			int a[4];
+			scanf("%d", &a[i]);
+			if (a[i] == 0)
+				flag++;
+		}
+		if (flag == 1)
+			printf("A\n");
+		else if (flag == 2)
+			printf("B\n");
+		else if (flag == 3)
+			printf("C\n");
+		else if (flag == 4)
+			printf("D\n");
+		else
+			printf("E\n");
+	}
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/2455
+void BOJ2455() {
+	int max = 0, temp1 = 0;
+	for (int i = 0; i < 4; i++) {
+		int a, b, temp2 = 0;
+		scanf("%d %d", &a, &b);
+		if (i == 0) {
+			max = b;
+			temp1 = b;
+		}
+		else {
+			temp2 = b - a;
+			temp1 += temp2;
+		}
+		if (temp1 > max)
+			max = temp1;
+	}
+	printf("%d", max);
+
+	return 0;
+}
