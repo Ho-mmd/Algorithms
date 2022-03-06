@@ -593,3 +593,155 @@ void BOJ2455() {
 
 	return 0;
 }
+
+//https://www.acmicpc.net/problem/1009
+void BOJ1009() {
+	//제곱 시 끝자리 규칙을 코드로 표현해 풀면 더 간단했음...
+	int n;
+	scanf("%d", &n);
+	for (int i = 0; i < n; i++) {
+		int a, b, temp1 = 0, temp2 = 0;
+		scanf("%d %d", &a, &b);
+		temp1 = a % 10;
+		switch (temp1) {
+		case 0:
+			printf("10");
+			break;
+		case 1:
+			printf("1");
+			break;
+		case 2:
+			temp2 = b % 4;
+			if (temp2 == 1)
+				printf("2");
+			else if (temp2 == 2)
+				printf("4");
+			else if (temp2 == 3)
+				printf("8");
+			else
+				printf("6");
+			break;
+		case 3:
+			temp2 = b % 4;
+			if (temp2 == 1)
+				printf("3");
+			else if (temp2 == 2)
+				printf("9");
+			else if (temp2 == 3)
+				printf("7");
+			else
+				printf("1");
+			break;
+		case 4:
+			temp2 = b % 2;
+			if (temp2 == 1)
+				printf("4");
+			else
+				printf("6");
+			break;
+		case 5:
+			printf("5");
+			break;
+		case 6:
+			printf("6");
+			break;
+		case 7:
+			temp2 = b % 4;
+			if (temp2 == 1)
+				printf("7");
+			else if (temp2 == 2)
+				printf("9");
+			else if (temp2 == 3)
+				printf("3");
+			else
+				printf("1");
+			break;
+		case 8:
+			temp2 = b % 4;
+			if (temp2 == 1)
+				printf("8");
+			else if (temp2 == 2)
+				printf("4");
+			else if (temp2 == 3)
+				printf("2");
+			else
+				printf("6");
+			break;
+		case 9:
+			temp2 = b % 2;
+			if (temp2 == 1)
+				printf("9");
+			else
+				printf("1");
+			break;
+		}
+		printf("\n");
+	}
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/2522
+void BOJ2522() {
+	int n;
+	scanf("%d", &n);
+	for (int i = n; i > 0; i--) {
+		for (int j = i - 1; j > 0; j--) {
+			printf(" ");
+		}
+		for (int k = i; k <= n; k++) {
+			printf("*");
+		}
+		printf("\n");
+	}
+	for (int i = 0; i < n - 1; i++) {
+		for (int j = 0; j <= i; j++) {
+			printf(" ");
+		}
+		for (int k = n - 1; k > i; k--) {
+			printf("*");
+		}
+		printf("\n");
+	}
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/5086
+void BOJ5086() {
+	while (1) {
+		int a, b;
+		scanf("%d %d", &a, &b);
+		if (a == 0 && b == 0)
+			return 0;
+		else if (a > b && a % b == 0) {
+			printf("multiple\n");
+		}
+		else if (a < b && b % a == 0) {
+			printf("factor\n");
+		}
+		else
+			printf("neither\n");
+	}
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/2576
+#include <stdlib.h>
+void BOJ2576() {
+	int* a, sum = 0, min = 100;
+	a = (int*)malloc(sizeof(int) * 7);
+	for (int i = 0; i < 7; i++) {
+		scanf("%d", &a[i]);
+
+		if (a[i] % 2 == 1) {
+			if (min > a[i])
+				min = a[i];
+			sum += a[i];
+		}
+	}
+	free(a);
+	if (sum == 0)
+		printf("-1");
+	else
+		printf("%d\n%d", sum, min);
+	return 0;
+}
