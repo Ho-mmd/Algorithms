@@ -745,3 +745,92 @@ void BOJ2576() {
 		printf("%d\n%d", sum, min);
 	return 0;
 }
+
+//https://www.acmicpc.net/problem/10991
+void BOJ10991() {
+	int n;
+	scanf("%d", &n);
+	for (int i = 0; i < n; i++) {
+		for (int k = n - i; k > 1; k--) {
+			printf(" ");
+		}
+		for (int j = 0; j <= i; j++) {
+			printf("* ");
+		}
+		printf("\n");
+	}
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/10991
+void BOJ10992() {
+	int n;
+	scanf("%d", &n);
+	for (int i = 0; i < n; i++) {
+		if (i == n - 1) {
+			for (int a = 0; a < 2 * n - 1; a++) {
+				printf("*");
+			}
+		}
+		else {
+			for (int j = n - i - 1; j > 0; j--) {
+				printf(" ");
+			}
+			printf("*");
+			if (i == 0)
+				printf("\n");
+			else {
+				for (int k = 0; k < 2 * i - 1; k++) {
+					printf(" ");
+				}
+				printf("*\n");
+			}
+		}
+	}
+}
+
+//https://www.acmicpc.net/problem/10886
+void BOJ10886() {
+	int n, a, sum = 0;
+	scanf("%d", &n);
+	for (int i = 0; i < n; i++) {
+		scanf("%d", &a);
+		if (a == 1)
+			sum++;
+	}
+	if (sum > n - sum)
+		printf("Junhee is cute!");
+	else
+		printf("Junhee is not cute!");
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/1212
+#include <string.h>
+void BOJ1212() {
+	char a[333445];
+	int len, temp;
+	scanf("%s", a);
+	len = strlen(a);
+	for (int i = 0; i < len; i++) {
+		temp = a[i] - '0';
+		if (i == 0 && temp <= 3) {
+			if (a[i] == '0')
+				printf("0");
+			else if (a[i] == '1')
+				printf("1");
+			else if (a[i] == '2')
+				printf("10");
+			else
+				printf("11");
+		}
+		else {
+			printf("%d", temp / 2 / 2);
+			printf("%d", temp / 2 % 2);
+			printf("%d", temp % 2 % 2);
+		}
+	}
+	return 0;
+}
+
