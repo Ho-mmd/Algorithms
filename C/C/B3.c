@@ -834,3 +834,63 @@ void BOJ1212() {
 	return 0;
 }
 
+//https://www.acmicpc.net/problem/2953
+#include <stdlib.h>
+void BOJ2953() {
+	int* a = (int*)malloc(sizeof(int) * 20);
+	int flag = 1, j = 1, sum = 0, temps = 0, tempf = 1;
+	for (int i = 0; i < 20; i++) {
+		scanf("%d", &a[i]);
+		temps += a[i];
+		if (j == 4) {
+			if (temps > sum) {
+				flag = tempf;
+				sum = temps;
+				tempf++;
+			}
+			else
+				tempf++;
+			temps = 0;
+			j = 0;
+		}
+		j++;
+	}
+	free(a);
+	printf("%d %d", flag, sum);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/2953
+#include <stdlib.h>
+void BOJ5565() {
+	int* a = (int*)malloc(sizeof(int) * 10), sum = 0;
+	for (int i = 0; i < 10; i++) {
+		scanf("%d", &a[i]);
+		if (i != 0)
+			sum += a[i];
+	}
+	printf("%d", a[0] - sum);
+	free(a);
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/2501
+void BOJ2501() {
+	int a, b, flag = 0;
+	scanf("%d %d", &a, &b);
+	for (int i = 1; i <= a; i++) {
+		if (a % i == 0)
+			flag++;
+
+		if (a % i == 0 && flag == b) {
+			printf("%d", i);
+			return 0;
+		}
+	}
+	if (b > flag)
+		printf("0");
+	return 0;
+}
+
+
