@@ -978,3 +978,33 @@ void BOJ10824() {
 	return 0;
 }
 
+//https://www.acmicpc.net/problem/2010
+void BOJ2010() {
+	int n, a, sum = 0;
+	scanf("%d", &n);
+	for (int i = 0; i < n; i++) {
+		scanf("%d", &a);
+		sum += a;
+	}
+	printf("%d", sum - n + 1);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/4101
+void BOJ4101() {
+	int a, b;
+	while (1) {
+		scanf("%d %d", &a, &b);
+
+		if (a == 0 && b == 0)
+			return 0;
+		else if (a <= b)
+			printf("No\n");
+		else
+			printf("Yes\n");
+	}
+	return 0;
+}
+
+
