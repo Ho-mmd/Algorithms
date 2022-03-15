@@ -1007,4 +1007,32 @@ void BOJ4101() {
 	return 0;
 }
 
+//https://www.acmicpc.net/problem/1547
+void BOJ1547() {
+	int n, a, b, flag = 1;
+	scanf("%d", &n);
+	for (int i = 0; i < n; i++) {
+		scanf("%d %d", &a, &b);
+		if (flag == a)
+			flag = b;
+		else if (flag == b)
+			flag = a;
+	}
+	printf("%d", flag);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/10833
+void BOJ10833() {
+	int n, a, b, sum = 0;
+	scanf("%d", &n);
+	for (int i = 0; i < n; i++) {
+		scanf("%d %d", &a, &b);
+		sum += b % a;
+	}
+	printf("%d", sum);
+
+	return 0;
+}
 
