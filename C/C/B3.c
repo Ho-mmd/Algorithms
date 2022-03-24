@@ -1064,3 +1064,21 @@ void BOJ2506() {
 
 	return 0;
 }
+
+//https://www.acmicpc.net/problem/2460
+void BOJ2460() {
+	int minus, plus, max = 0, sum = 0;
+
+	for (int i = 0; i < 10; i++) {
+		scanf("%d %d", &minus, &plus);
+		sum -= minus;
+		sum += plus;
+
+		if (sum > max)
+			max = sum;
+	}
+
+	printf("%d", max);
+
+	return 0;
+}
