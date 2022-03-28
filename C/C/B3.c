@@ -1082,3 +1082,47 @@ void BOJ2460() {
 
 	return 0;
 }
+
+//https://www.acmicpc.net/problem/5063
+void BOJ5063() {
+	int n, r, c, e;
+	scanf("%d", &n);
+
+	for (int i = 0; i < n; i++) {
+		scanf("%d%d%d", &r, &c, &e);
+		if (r + e < c)
+			printf("advertise\n");
+		else if (r + e == c)
+			printf("does not matter\n");
+		else
+			printf("do not advertise\n");
+	}
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/10990
+void BOJ10990() {
+	int n;
+	scanf("%d", &n);
+	for (int i = 0; i < n; i++) {
+		if (i == 0) {
+			for (int j = i; j < n - 1; j++)
+				printf(" ");
+			printf("*");
+			printf("\n");
+		}
+		else {
+			for (int j = i; j < n - 1; j++)
+				printf(" ");
+			printf("*");
+			for (int k = 0; k < 2 * i - 1; k++)
+				printf(" ");
+			printf("*");
+			printf("\n");
+		}
+	}
+
+	return 0;
+}
+
