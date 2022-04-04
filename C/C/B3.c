@@ -1,11 +1,10 @@
 # define _CRT_SECURE_NO_WARNINGS
 
 #include <stdio.h>
-
+	
 int main(void) {
 	
 }
-	
 
 //https://www.acmicpc.net/problem/2739
 void BOJ2739() {
@@ -1126,3 +1125,68 @@ void BOJ10990() {
 	return 0;
 }
 
+//https://www.acmicpc.net/problem/2935
+void BOJ2935() {
+	char a[101], b[101], c[201] = { '0' }, d;
+
+	scanf("%s %c %s", a, &d, b);
+	if (d == '*') {
+		c[0] = '1';
+		for (int i = 1; i < strlen(a) + strlen(b) - 1; i++)
+			c[i] = '0';
+		c[strlen(a) + strlen(b)] = '\0';
+	}
+	else if (d == '+') {
+		if (strlen(a) > strlen(b)) {
+			for (int i = 0; i < strlen(a); i++)
+				c[i] = a[i];
+			c[strlen(a) - strlen(b)] = '1';
+			c[strlen(a)] = '\0';
+		}
+		else if (strlen(a) < strlen(b)) {
+			for (int i = 0; i < strlen(b); i++)
+				c[i] = b[i];
+			c[strlen(b) - strlen(a)] = '1';
+			c[strlen(b)] = '\0';
+		}
+		else {
+			c[0] = '2';
+			for (int i = 1; i < strlen(a); i++)
+				c[i] = a[i];
+		}
+	}
+	printf("%s", c);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/2476
+void BOJ2476() {
+	int a, b, c, d, max = 0, tmp;
+	scanf("%d", &a);
+	for (int i = 0; i < a; i++) {
+		scanf("%d%d%d", &b, &c, &d);
+		if (b == c && c == d)
+			tmp = 10000 + 1000 * b;
+		else if (b == c)
+			tmp = 1000 + 100 * b;
+		else if (b == d)
+			tmp = 1000 + 100 * b;
+		else if (c == d)
+			tmp = 1000 + 100 * c;
+		else {
+			if (b > c && b > d)
+				tmp = b * 100;
+			else if (c > b && c > d)
+				tmp = c * 100;
+			else if (d > c && d > b)
+				tmp = d * 100;
+		}
+
+		if (tmp > max)
+			max = tmp;
+	}
+	printf("%d", max);
+
+	return 0;
+}
