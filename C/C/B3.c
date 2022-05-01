@@ -1267,3 +1267,88 @@ void BOJ3460() {
 
 	return 0;
 }
+
+//https://www.acmicpc.net/problem/2566
+void BOJ2566() {
+	int a[9][9], max = 0, row, col;
+	for (int i = 0; i < 9; i++) {
+		for (int j = 0; j < 9; j++) {
+			scanf("%d", &a[i][j]);
+			if (a[i][j] > max) {
+				max = a[i][j];
+				row = i + 1;
+				col = j + 1;
+			}
+		}
+	}
+	printf("%d\n%d %d", max, row, col);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/9316
+void BOJ9316() {
+	int n;
+	scanf("%d", &n);
+	for (int i = 0; i < n; i++)
+		printf("Hello World, Judge %d!\n", i + 1);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/2965
+void BOJ2965() {
+	int a, b, c, cnt = 0;
+	scanf("%d%d%d", &a, &b, &c);
+	while (1) {
+		if (a + 1 == b && b + 1 == c)
+			break;
+
+		if (c - b >= b - a) {
+			a = b;
+			b++;
+		}
+		else if (b - a > c - b) {
+			c = b;
+			b--;
+		}
+		cnt++;
+	}
+	printf("%d", cnt);
+	return 0; 
+}
+
+//https://www.acmicpc.net/problem/1267
+void BOJ1267() {
+	int n, a, m = 0, y = 0;
+	scanf("%d", &n);
+	for (int i = 0; i < n; i++) {
+		scanf("%d", &a);
+		y += (a / 30 + 1) * 10;
+		m += (a / 60 + 1) * 15;
+	}
+	if (y < m)
+		printf("Y %d", y);
+	else if (y == m)
+		printf("Y M %d", y);
+	else
+		printf("M %d", m);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/10103
+void BOJ10103() {
+	int a = 100, b = 100, n, aa, bb;
+	scanf("%d", &n);
+	for (int i = 0; i < n; i++) {
+		scanf("%d%d", &aa, &bb);
+		if (aa > bb)
+			b -= aa;
+		else if (aa < bb)
+			a -= bb;
+	}
+	printf("%d\n%d", a, b);
+
+	return 0;
+}
