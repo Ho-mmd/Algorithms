@@ -2,7 +2,8 @@
 
 #include <stdio.h>
 
-int main(void) {
+int main(void)
+{
 	
 }
 
@@ -1352,3 +1353,110 @@ void BOJ10103() {
 
 	return 0;
 }
+
+//https://www.acmicpc.net/problem/10995
+void BOJ10995() {
+	int n;
+	scanf("%d", &n);
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			if (i % 2 == 0) {
+				printf("* ");
+			}
+			else {
+				printf(" *");
+			}
+		}
+		printf("\n");
+	}
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/9325
+void BOJ9325() {
+	int n, pr, cnt, a, b;
+	scanf("%d", &n);
+	for (int i = 0; i < n; i++) {
+		scanf("%d", &pr);
+		scanf("%d", &cnt);
+		for (int j = 0; j < cnt; j++) {
+			scanf("%d%d", &a, &b);
+			pr += a * b;
+		}
+		printf("%d\n", pr);
+	}
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/5717
+void BOJ5717() {
+	int a, b;
+	while (1) {
+		scanf("%d%d", &a, &b);
+		if (a == 0 && b == 0)
+			break;
+		printf("%d\n", a + b);
+	}
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/10214
+void BOJ10214() {
+	int n, a, b, aa, bb;
+	scanf("%d", &n);
+	for (int i = 0; i < n; i++) {
+		aa = 0;
+		bb = 0;
+		for (int j = 0; j < 9; j++) {
+			scanf("%d%d", &a, &b);
+			aa += a;
+			bb += b;
+		}
+		if (aa > bb)
+			printf("Yonsei\n");
+		else if (bb > aa)
+			printf("Korea\n");
+		else
+			printf("Draw\n");
+	}
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/2720
+void BOJ2720() {
+	int n, ch;
+	scanf("%d", &n);
+	for (int i = 0; i < n; i++) {
+		scanf("%d", &ch);
+		printf("%d ", ch / 25);
+		printf("%d ", (ch % 25) / 10);
+		printf("%d ", (ch % 25 % 10) / 5);
+		printf("%d\n", ch % 5);
+	}
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/10984
+void BOJ10984() {
+	int a, b, c, tot;
+	double sum, d;
+	scanf("%d", &a);
+	for (int i = 0; i < a; i++) {
+		scanf("%d", &b);
+		sum = 0;
+		tot = 0;
+		for (int j = 0; j < b; j++) {
+			scanf("%d %lf", &c, &d);
+			sum += c * d;
+			tot += c;
+			getchar();
+		}
+		if (sum == 0)
+			printf("%d %.1lf\n", tot, sum);
+		else
+			printf("%d %.1lf\n", tot, sum / tot);
+	}
+	return 0;
+}
+
+
