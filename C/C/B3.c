@@ -1459,4 +1459,37 @@ void BOJ10984() {
 	return 0;
 }
 
+//https://www.acmicpc.net/problem/1964
+void BOJ1964() {
+	long long n, tot = 5, step = 7;
+	scanf("%lld", &n);
+	for (int i = 1; i < n; i++) {
+		tot += step;
+		step += 3;
+	}
+	printf("%lld", tot % 45678);
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/9610
+void BOJ9610() {
+	int n, a = 0, b = 0, c = 0, d = 0, e = 0, x, y;
+	scanf("%d", &n);
+	for (int i = 0; i < n; i++) {
+		scanf("%d%d", &x, &y);
+		if (x == 0 || y == 0)
+			e++;
+		else if (x > 0 && y > 0)
+			a++;
+		else if (x < 0 && y > 0)
+			b++;
+		else if (x < 0 && y < 0)
+			c++;
+		else if (x > 0 && y < 0)
+			d++;
+	}
+	printf("Q1: %d\nQ2: %d\nQ3: %d\nQ4: %d\nAXIS: %d", a, b, c, d, e);
+
+	return 0;
+}
 
