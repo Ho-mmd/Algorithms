@@ -1493,3 +1493,99 @@ void BOJ9610() {
 	return 0;
 }
 
+//https://www.acmicpc.net/problem/10569
+void BOJ10569() {
+	int a, b, n;
+	scanf("%d", &n);
+	for (int i = 0; i < n; i++) {
+		scanf("%d%d", &a, &b);
+		printf("%d\n", b - a + 2);
+	}
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/4504
+void BOJ4504() {
+	int n, a;
+	scanf("%d", &n);
+	while (1) {
+		scanf("%d", &a);
+		if (a == 0)
+			break;
+
+		if (a % n == 0)
+			printf("%d is a multiple of %d.\n", a, n);
+		else
+			printf("%d is NOT a multiple of %d.\n", a, n);
+	}
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/3058
+void BOJ3058() {
+	int a, b, sum, min;
+	scanf("%d", &a);
+	for (int i = 0; i < a; i++) {
+		sum = 0;
+		for (int j = 0; j < 7; j++) {
+			scanf("%d", &b);
+			if (b % 2 == 0) {
+				if (sum == 0) {
+					min = b;
+				}
+				else if (min > b)
+					min = b;
+				sum += b;
+			}
+		}
+		printf("%d %d\n", sum, min);
+	}
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/2355
+void BOJ2355() {
+	long long a, b, tmp;
+	scanf("%lld%lld", &a, &b);
+	if (b > a) {
+		tmp = a;
+		a = b;
+		b = tmp;
+	}
+
+	if ((a - b) % 2 == 0)
+		printf("%lld", (a + b - 1) * (a - b) / 2 + a);
+	else
+		printf("%lld", (a + b) * ((a - b) / 2 + 1));
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/3034
+void BOJ3034() {
+	int n, a, b, c, d;
+	scanf("%d%d%d", &n, &b, &c);
+	for (int i = 0; i < n; i++) {
+		scanf("%d", &a);
+		if (b * b + c * c >= a * a)
+			printf("DA\n");
+		else
+			printf("NE\n");
+	}
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/9295
+void BOJ9295() {
+	int n, a, b;
+	scanf("%d", &n);
+	for (int i = 0; i < n; i++) {
+		scanf("%d%d", &a, &b);
+		printf("Case %d: %d\n", i + 1, a + b);
+	}
+
+	return 0;
+}
+
+
