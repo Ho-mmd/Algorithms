@@ -1588,4 +1588,49 @@ void BOJ9295() {
 	return 0;
 }
 
+//https://www.acmicpc.net/problem/10178
+void BOJ10178() {
+	int n, a, b;
+	scanf("%d", &n);
+	for (int i = 0; i < n; i++) {
+		scanf("%d%d", &a, &b);
+		printf("You get %d piece(s) and your dad gets %d piece(s).\n", a / b, a % b);
+	}
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/12790
+void BOJ12790() {
+	int n, a, b, c, d, aa, bb, cc, dd, aaa, bbb, ccc, ddd;
+	scanf("%d", &n);
+	for (int i = 0; i < n; i++) {
+		scanf("%d%d%d%d%d%d%d%d", &a, &b, &c, &d, &aa, &bb, &cc, &dd);
+		aaa = a + aa;
+		bbb = b + bb;
+		ccc = c + cc;
+		ddd = d + dd;
+		if (aaa < 1)
+			aaa = 1;
+		if (bbb < 1)
+			bbb = 1;
+		if (ccc < 0)
+			ccc = 0;
+		printf("%d\n", aaa + bbb * 5 + 2 * ccc + 2 * ddd);
+	}
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/2921
+void BOJ2921() {
+	int n, sum = 0;
+	scanf("%d", &n);
+	for (int i = 1; i <= n; i++) {
+		for (int j = 0; j <= i; j++) {
+			sum += i + j;
+		}
+	}
+	printf("%d", sum);
+	return 0;
+}
+
 
