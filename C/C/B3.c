@@ -1634,3 +1634,83 @@ void BOJ2921() {
 }
 
 
+//https://www.acmicpc.net/problem/2959
+void BOJ2959() {
+	int a[4], i, j, tmp, min;
+
+	for (i = 0; i < 4; i++)
+		scanf("%d", &a[i]);
+
+	for (i = 0; i < 4; i++) {
+		min = i;
+		for (j = i + 1; j < 4; j++) {
+			if (a[min] > a[j]) {
+				min = j;
+			}
+		}
+		tmp = a[i];
+		a[i] = a[min];
+		a[min] = tmp;
+	}
+
+	printf("%d", a[0] * a[2]);
+
+	return 0;
+}
+
+
+//https://www.acmicpc.net/problem/10539
+void BOJ10539() {
+	int n, a, pre = 0;
+	scanf("%d", &n);
+	for (int i = 0; i < n; i++) {
+		scanf("%d", &a);
+		printf("%d ", a * (i + 1) - pre);
+		pre += a * (i + 1) - pre;
+	}
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/2903
+void BOJ2903() {
+	int n, tot = 2;
+	scanf("%d", &n);
+	for (int i = 0; i < n; i++) {
+		tot = 2 * tot - 1;
+	}
+	printf("%d", tot * tot);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/13752
+void BOJ13752() {
+	int n, a;
+	scanf("%d", &n);
+	for (int i = 0; i < n; i++) {
+		scanf("%d", &a);
+		for (int j = 0; j < a; j++)
+			printf("=");
+		printf("\n");
+	}
+
+	return 0;
+}
+
+#include <math.h>
+//https://www.acmicpc.net/problem/11966
+void BOJ11966() {
+	int n;
+	double a;
+
+	scanf("%d", &n);
+
+	a = log2(n);
+
+	if (a - (int)a == 0)
+		printf("1");
+	else
+		printf("0");
+
+	return 0;
+}
