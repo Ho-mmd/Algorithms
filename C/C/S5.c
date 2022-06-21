@@ -3,28 +3,7 @@
 #include <stdio.h>
 
 int main(void) {
-	int n, j, k, cnt = 0;
-	char arr[101];
-
-	scanf("%d", &n);
-	for (int i = 0; i < n; i++) {
-		scanf("%s", arr);
-		k = 0;
-		for (j = 0; j < strlen(arr) - 2; j++) {
-			for (k = j + 2; k < strlen(arr); k++) {
-				if (arr[j] == arr[k])
-					break;
-			}
-			if (arr[j] == arr[k])
-				break;
-		}
-		if (k == strlen(arr) || k == 0)
-			cnt++;
-	}
-
-	printf("%d", cnt);
-
-	return 0;
+	
 }
 
 
@@ -83,22 +62,24 @@ void BOJ1978() {
 
 //https://www.acmicpc.net/problem/1316
 void BOJ1316() {
-	int n, j, k, cnt = 0;
+	int n, j, k, cnt = 0, end;
 	char arr[101];
 
 	scanf("%d", &n);
 	for (int i = 0; i < n; i++) {
 		scanf("%s", arr);
 		k = 0;
-		for (j = 0; j < strlen(arr) - 2; j++) {
-			for (k = j + 2; k < strlen(arr); k++) {
-				if (arr[j] == arr[k])
+		end = strlen(arr);
+		for (j = 0; j < end - 2; j++) {
+			for (k = j + 2; k < end; k++) {
+				if (arr[j] == arr[k] && arr[k] != arr[k - 1])
 					break;
 			}
-			if (arr[j] == arr[k])
+
+			if (arr[j] == arr[k] && arr[k] != arr[k - 1])
 				break;
 		}
-		if (k == strlen(arr) || k == 0)
+		if (k == end || k == 0)
 			cnt++;
 	}
 
