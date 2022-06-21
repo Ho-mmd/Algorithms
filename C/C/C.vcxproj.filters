@@ -16,10 +16,13 @@
     <Filter Include="Bronze">
       <UniqueIdentifier>{0677aa05-4afd-4fc5-8327-064356a92b35}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Silver">
+      <UniqueIdentifier>{1baae03f-4659-4f1e-a344-acc38e79fef7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="B3.c">
-      <Filter>Bronze</Filter>
+    <ClCompile Include="S5.c">
+      <Filter>Silver</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
