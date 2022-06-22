@@ -1,9 +1,31 @@
 #define _CRT_SECURE_NO_WARNINGS
 
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(void) {
+	int n, i, j, tmp, min;
+
+	scanf("%d", &n);
+
+	int* arr = malloc(sizeof(int) * n);
+
+	for (i = 0; i < n; i++) 
+		scanf("%d", &arr[i]);
 	
+	for (i = 0; i < n; i++) {
+		min = i;
+		for (j = 0; j < n; j++) {
+			if (arr[min] > arr[j] && arr[j] != 1000001)
+				min = j;
+		}
+		printf("%d\n", arr[min]);
+		arr[min] = 1000001;
+	}
+
+	free(arr);
+
+	return 0;
 }
 
 
@@ -61,6 +83,7 @@ void BOJ1978() {
 }
 
 //https://www.acmicpc.net/problem/1316
+#include <string.h>
 void BOJ1316() {
 	int n, j, k, cnt = 0, end;
 	char arr[101];
@@ -87,5 +110,35 @@ void BOJ1316() {
 
 	return 0;
 }
+
+//https://www.acmicpc.net/problem/2941
+#include <string.h>
+void BOJ2941() {
+	char arr[101];
+	int count = 0;
+
+	scanf("%s", arr);
+
+	for (int i = 0; i < strlen(arr); i++) {
+		if (arr[i] == 'c' && (arr[i + 1] == '=' || arr[i + 1] == '-'))
+			i++;
+		else if (arr[i] == 'd') {
+			if (arr[i + 1] == '-')
+				i++;
+			else if (arr[i + 1] == 'z' && arr[i + 2] == '=')
+				i += 2;
+		}
+		else if ((arr[i] == 'l' || arr[i] == 'n') && arr[i + 1] == 'j')
+			i++;
+		else if ((arr[i] == 's' || arr[i] == 'z') && arr[i + 1] == '=')
+			i++;
+		count++;
+	}
+
+	printf("%d", count);
+
+	return 0;
+}
+
 
 
