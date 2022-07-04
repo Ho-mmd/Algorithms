@@ -3,8 +3,47 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void Quicksort(int arr[], int start, int end) {
+	int index;
+
+	if (start < end) {
+		index = Partition(arr, start, end);
+		Quicksort(arr, start, index - 1);
+		Quicksort(arr, index + 1, end);
+	}
+	else
+		return;
+}
+
+int Partition(int arr[], int start, int end) {
+	int tool = (start + end) / 2;
+	int temp;
+
+	temp = arr[tool];
+	arr[tool] = arr[end];
+	arr[end] = temp;
+
+	int pivot = arr[end];
+	int i, index = start;
+
+	for (i = start; i < end; i++) {
+		if (arr[i] <= pivot) {
+			temp = arr[i];
+			arr[i] = arr[index];
+			arr[index] = temp;
+			index++;
+		}
+	}
+
+	temp = arr[index];
+	arr[index] = arr[end];
+	arr[end] = temp;
+
+	return index;
+}
+
 int main(void) {
-	int n, i, j, tmp, min;
+	int n, i;
 
 	scanf("%d", &n);
 
@@ -13,15 +52,10 @@ int main(void) {
 	for (i = 0; i < n; i++) 
 		scanf("%d", &arr[i]);
 	
-	for (i = 0; i < n; i++) {
-		min = i;
-		for (j = 0; j < n; j++) {
-			if (arr[min] > arr[j] && arr[j] != 1000001)
-				min = j;
-		}
-		printf("%d\n", arr[min]);
-		arr[min] = 1000001;
-	}
+	Quicksort(arr, 0, n - 1);
+
+	for (i = 0; i < n; i++)
+		printf("%d ", arr[i]);
 
 	free(arr);
 
