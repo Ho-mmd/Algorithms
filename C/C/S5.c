@@ -118,7 +118,7 @@ void BOJ2941() {
 	return 0;
 }
 
-//https://www.acmicpc.net/problem/2941
+//https://www.acmicpc.net/problem/2751
 #include <stdlib.h>
 void merge(int arr[], int start, int mid, int end) {
 	int b[1000001];
@@ -184,6 +184,28 @@ void BOJ2751() {
 		printf("%d ", arr[i]);
 
 	free(arr);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/2869
+void BOJ2869() {
+	int A, B, V, day;
+
+	scanf("%d%d%d", &A, &B, &V);
+
+	if (V <= A)
+		day = 1;
+	else if (V - (A - B) < A)
+		day = 2;
+	else {
+		if ((V - A) % (A - B) == 0)
+			day = (V - A) / (A - B) + 1;
+		else
+			day = (V - A) / (A - B) + 2;
+	}
+
+	printf("%d", day);
 
 	return 0;
 }
