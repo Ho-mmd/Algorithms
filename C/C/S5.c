@@ -321,3 +321,53 @@ void BOJ1181() {
 	return 0;
 }
 
+//https://www.acmicpc.net/problem/2581
+void BOJ2581() {
+	int n, i, a, b, flag = 1, sum = 0, min;
+
+	scanf("%d%d", &a, &b);
+
+	for (n = a; n <= b; n++) {
+		for (i = 2; i < n; i++) {
+			if (n % i == 0)
+				break;
+
+		}
+		if (i == n) {
+			sum += n;
+			if (flag == 1) {
+				min = n;
+				flag = 0;
+			}
+		}
+	}
+
+	if (sum == 0)
+		printf("-1");
+	else
+		printf("%d\n%d", sum, min);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/1427
+#include <string.h>
+void BOJ1427() {
+	char arr[11];
+	int cnt[10] = { 0 };
+
+	scanf("%s", arr);
+
+	for (int i = 0; i <= strlen(arr); i++)
+		cnt[(int)arr[i] - 48]++;
+
+	for (int j = 9; j >= 0; j--) {
+		while (cnt[j] != 0) {
+			printf("%d", j);
+			cnt[j]--;
+		}
+	}
+
+	return 0;
+}
+

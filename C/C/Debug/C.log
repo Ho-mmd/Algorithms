@@ -1,10 +1,13 @@
 ﻿  S5.c
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(108,10): warning C4098: 'BOJ4673': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(129,10): warning C4098: 'BOJ1978': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(158,10): warning C4098: 'BOJ1316': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(169,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(187,10): warning C4098: 'BOJ2941': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(257,10): warning C4098: 'BOJ2751': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(279,10): warning C4098: 'BOJ2869': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(318,10): warning C4098: 'BOJ7568': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(13,20): warning C4018: '<=': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(55,10): warning C4098: 'BOJ4673': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(76,10): warning C4098: 'BOJ1978': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(105,10): warning C4098: 'BOJ1316': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(116,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(134,10): warning C4098: 'BOJ2941': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(204,10): warning C4098: 'BOJ2751': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(226,10): warning C4098: 'BOJ2869': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(265,10): warning C4098: 'BOJ7568': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(337,10): warning C4098: 'BOJ1181': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(366,10): warning C4098: 'BOJ2581': 'void' 함수에서 값을 반환하고 있습니다.
   C.vcxproj -> C:\Users\USER\Desktop\BOJ\C\Debug\C.exe
