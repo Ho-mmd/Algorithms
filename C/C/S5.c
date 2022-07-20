@@ -291,13 +291,13 @@ void merge0(str* arr, int first, int mid, int last) {
 	for (k = first; k <= last; k++)
 		arr[k] = sort[k];
 }
-void mergesort(str* arr, int first, int last) {
+void mergesort0(str* arr, int first, int last) {
 	int mid;
 
 	if (first < last) {
 		mid = (first + last) / 2;
-		mergesort(arr, first, mid);
-		mergesort(arr, mid + 1, last);
+		mergesort0(arr, first, mid);
+		mergesort0(arr, mid + 1, last);
 		merge0(arr, first, mid, last);
 	}
 }
@@ -311,7 +311,7 @@ void BOJ1181() {
 		arr[i].length = strlen(arr[i].string);
 	}
 
-	mergesort(arr, 0, N - 1);
+	mergesort0(arr, 0, N - 1);
 
 	printf("%s\n", arr[0].string);
 	for (int i = 1; i < N; i++) {
@@ -367,6 +367,92 @@ void BOJ1427() {
 			cnt[j]--;
 		}
 	}
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/11650
+#include <stdlib.h>
+typedef struct {
+	int x;
+	int y;
+}Pos;
+void merge1(Pos arr[], int start, int mid, int end) {
+	Pos tmp[100001];
+	int i = start, j = mid + 1, k = 0;
+
+	while (i <= mid && j <= end) {
+		if (arr[i].x < arr[j].x) {
+			tmp[k] = arr[i];
+			k++;
+			i++;
+		}
+		else if (arr[i].x == arr[j].x) {
+			if (arr[i].y > arr[j].y) {
+				tmp[k] = arr[j];
+				k++;
+				j++;
+			}
+			else {
+				tmp[k] = arr[i];
+				k++;
+				i++;
+			}
+		}
+		else {
+			tmp[k] = arr[j];
+			k++;
+			j++;
+		}
+	}
+
+	while (i <= mid) {
+		tmp[k] = arr[i];
+		k++;
+		i++;
+	}
+
+	while (j <= end) {
+		tmp[k] = arr[j];
+		k++;
+		j++;
+	}
+
+	while (k > 0) {
+		arr[start + k - 1] = tmp[k - 1];
+		k--;
+	}
+}
+void mergesort1(Pos arr[], int start, int end) {
+	int mid;
+
+	if (start < end) {
+		mid = (start + end) / 2;
+
+		mergesort1(arr, start, mid);
+		mergesort1(arr, mid + 1, end);
+		merge1(arr, start, mid, end);
+	}
+	else
+		return;
+
+}
+void BOJ11650() {
+	int n;
+
+	scanf("%d", &n);
+
+	Pos* arr = (Pos*)malloc(sizeof(Pos) * n);
+
+	for (int i = 0; i < n; i++)
+		scanf("%d %d", &arr[i].x, &arr[i].y);
+
+	mergesort1(arr, 0, n - 1);
+
+	for (int i = 0; i < n; i++)
+		printf("%d %d\n", arr[i].x, arr[i].y);
+
+	free(arr);
 
 	return 0;
 }
