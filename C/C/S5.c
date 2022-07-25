@@ -639,3 +639,23 @@ void BOJ11651() {
 
 	return 0;
 }
+
+//https://www.acmicpc.net/problem/1010
+void BOJ1010() {
+	int n, x, y;
+	int con;
+
+	scanf("%d", &n);
+
+	for (int i = 0; i < n; i++) {
+		con = 1;
+		scanf("%d%d", &x, &y);
+		for (int j = 0; j < x; j++) {
+			con *= y - j;
+			con /= j + 1;
+		}
+		printf("%d\n", con);
+	}
+
+	return 0;
+}
