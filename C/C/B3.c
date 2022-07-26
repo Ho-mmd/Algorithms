@@ -1,12 +1,3 @@
-# define _CRT_SECURE_NO_WARNINGS
-
-#include <stdio.h>
-
-int main(void)
-{
-	
-}
-
 //https://www.acmicpc.net/problem/2739
 void BOJ2739() {
 	int a;
