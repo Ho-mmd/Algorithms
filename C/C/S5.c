@@ -1,10 +1,42 @@
 #define _CRT_SECURE_NO_WARNINGS
 
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(void)
 {
-	
+	int n, m, cmp;
+
+	scanf("%d", &n);
+
+	int *arr = (int*)malloc(sizeof(int) * n);
+
+	for (int i = 0; i < n; i++)
+		scanf("%d", &arr[i]);
+
+	scanf("%d", &m);
+
+	int* tmp = (int*)malloc(sizeof(int) * m);
+
+	for (int i = 0; i < m; i++) {
+		scanf("%d", &cmp);
+		for (int j = 0; j < n; j++) {
+			if (arr[j] == cmp) {
+				tmp[i] = 1;
+				break;
+			}
+			else
+				tmp[i] = 0;
+		}
+	}
+		
+	for (int i = 0; i < m; i++)
+		printf("%d ", tmp[i]);
+
+	free(arr);
+	free(tmp);
+
+	return 0;
 }
 
 //https://www.acmicpc.net/problem/4673
@@ -690,3 +722,15 @@ void BOJ11866() {
 
 	return 0;
 }
+
+//https://www.acmicpc.net/problem/1676
+void BOJ1676() {
+	int n;
+
+	scanf("%d", &n);
+
+	printf("%d", n / 5 + n / 25 + n / 125);
+
+	return 0;
+}
+
