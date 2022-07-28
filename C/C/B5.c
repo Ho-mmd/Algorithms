@@ -1,3 +1,11 @@
+#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+
+int main(void) {
+	//9653
+}
+
 //https://www.acmicpc.net/problem/2557
 void BOJ2557(void) {
 	printf("Hello World!");

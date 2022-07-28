@@ -1,42 +1,10 @@
 #define _CRT_SECURE_NO_WARNINGS
 
 #include <stdio.h>
-#include <stdlib.h>
 
 int main(void)
 {
-	int n, m, cmp;
-
-	scanf("%d", &n);
-
-	int *arr = (int*)malloc(sizeof(int) * n);
-
-	for (int i = 0; i < n; i++)
-		scanf("%d", &arr[i]);
-
-	scanf("%d", &m);
-
-	int* tmp = (int*)malloc(sizeof(int) * m);
-
-	for (int i = 0; i < m; i++) {
-		scanf("%d", &cmp);
-		for (int j = 0; j < n; j++) {
-			if (arr[j] == cmp) {
-				tmp[i] = 1;
-				break;
-			}
-			else
-				tmp[i] = 0;
-		}
-	}
-		
-	for (int i = 0; i < m; i++)
-		printf("%d ", tmp[i]);
-
-	free(arr);
-	free(tmp);
-
-	return 0;
+	
 }
 
 //https://www.acmicpc.net/problem/4673
@@ -730,6 +698,98 @@ void BOJ1676() {
 	scanf("%d", &n);
 
 	printf("%d", n / 5 + n / 25 + n / 125);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/10815
+#include <stdlib.h>
+int compare(const void* a, const void* b) {
+	int num1 = *(int*)a;
+	int num2 = *(int*)b;
+
+	if (num1 > num2)
+		return 1;
+	else if (num1 < num2)
+		return -1;
+	else
+		return 0;
+
+}
+int binarySearch(int arr[], int start, int end, int a) {
+	int mid = (start + end) / 2;
+
+	if (start <= end) {
+		if (a > arr[mid])
+			binarySearch(arr, mid + 1, end, a);
+		else if (a < arr[mid])
+			binarySearch(arr, start, mid - 1, a);
+		else
+			return 1;
+	}
+	else
+		return 0;
+}
+void BOJ10815() {
+	int n, m, cmp;
+
+	scanf("%d", &n);
+
+	int* arr = (int*)malloc(sizeof(int) * n);
+
+	for (int i = 0; i < n; i++)
+		scanf("%d", &arr[i]);
+
+	scanf("%d", &m);
+
+	int* tmp = (int*)malloc(sizeof(int) * m);
+
+	for (int i = 0; i < m; i++)
+		scanf("%d", &tmp[i]);
+
+	qsort(arr, n, sizeof(int), compare);
+
+	for (int i = 0; i < m; i++) {
+		if (binarySearch(arr, 0, n, tmp[i]) == 1)
+			tmp[i] = 1;
+		else
+			tmp[i] = 0;
+	}
+
+	for (int j = 0; j < m; j++)
+		printf("%d ", tmp[j]);
+
+	free(arr);
+	free(tmp);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/1476
+void BOJ1476() {
+	int E, S, M, cnt = 1;
+	int arr[3] = { 1, 1, 1 };
+
+	scanf("%d%d%d", &E, &S, &M);
+
+	while (1) {
+		if (arr[0] > 15)
+			arr[0] = 1;
+		if (arr[1] > 28)
+			arr[1] = 1;
+		if (arr[2] > 19)
+			arr[2] = 1;
+
+		if (arr[0] == E && arr[1] == S && arr[2] == M)
+			break;
+
+		arr[0]++;
+		arr[1]++;
+		arr[2]++;
+		cnt++;
+	}
+
+	printf("%d", cnt);
 
 	return 0;
 }
