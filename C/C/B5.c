@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 int main(void) {
-	//10926
+	//5522
 }
 
 //https://www.acmicpc.net/problem/2557
@@ -296,20 +296,23 @@ void BOJ9654(void) {
 
 //https://www.acmicpc.net/problem/10926
 void BOJ10926(void) {
-	char a[50];
+	char a[51];
 	scanf("%s", &a);
-	if (strcmp(a, a) == 0) //strcmp: 문자열 비교(ASCII 코드 기준 / -1: 후자가 클 때, 0: 전자, 후자 동일, 1: 전자가 클 때) 
-		printf("%s??!", a);
+
+	printf("%s??!", a);
 
 	return 0;
 }
 
 //https://www.acmicpc.net/problem/5554
 void BOJ5554(void) {
-	char a[50];
-	scanf("%s", &a);
-	if (strcmp(a, a) == 0) //strcmp: 문자열 비교(ASCII 코드 기준 / -1: 후자가 클 때, 0: 전자, 후자 동일, 1: 전자가 클 때) 
-		printf("%s??!", a);
+	int a, b, c, d;
+
+	scanf("%d %d %d %d", &a, &b, &c, &d);
+
+	int tot = a + b + c + d;
+
+	printf("%d\n%d", tot / 60, tot % 60);
 
 	return 0;
 }
