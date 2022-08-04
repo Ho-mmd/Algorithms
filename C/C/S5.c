@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 
 #include <stdio.h>
+#include <string.h>
 
 int main(void)
 {
@@ -998,4 +999,48 @@ void BOJ11004() {
 
 	return 0;
 }
+
+//https://www.acmicpc.net/problem/9655
+void BOJ9655() {
+	int n, flag = 0;
+
+	scanf("%d", &n);
+
+	while (n != 0) {
+		if (n > 3)
+			n -= 3;
+		else
+			n -= 1;
+
+		if (flag == 1)
+			flag = 0;
+		else
+			flag = 1;
+	}
+
+	if (flag == 1)
+		printf("SK");
+	else
+		printf("CY");
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/1439
+void BOJ1439() {
+	char arr[1000001];
+	int cnt = 0;
+
+	scanf("%s", arr);
+
+	for (int i = 1; i < strlen(arr); i++) {
+		if (arr[i] != arr[i - 1])
+			cnt++;
+	}
+
+	printf("%d", cnt / 2 + cnt % 2);
+
+	return 0;
+}
+
 

@@ -1,38 +1,37 @@
 ﻿  S5.c
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(11,11): warning C4098: 'compare1': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(13,12): warning C4098: 'compare1': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(15,11): warning C4098: 'compare1': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(29,37): warning C4133: '함수': 'void (__cdecl *)(const void *,const void *)'과(와) '_CoreCrtNonSecureSearchSortCompareFunction' 사이의 형식이 호환되지 않습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(67,10): warning C4098: 'BOJ4673': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(88,10): warning C4098: 'BOJ1978': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(117,10): warning C4098: 'BOJ1316': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(128,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(146,10): warning C4098: 'BOJ2941': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(216,10): warning C4098: 'BOJ2751': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(238,10): warning C4098: 'BOJ2869': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(277,10): warning C4098: 'BOJ7568': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(349,10): warning C4098: 'BOJ1181': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(378,10): warning C4098: 'BOJ2581': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(389,20): warning C4018: '<=': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(399,10): warning C4098: 'BOJ1427': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(485,10): warning C4098: 'BOJ11650': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(499,20): warning C4013: 'Partition'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(553,10): warning C4098: 'BOJ10814': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(582,10): warning C4098: 'BOJ1436': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(591,7): warning C4101: 'tmp' :참조되지 않은 지역 변수입니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(668,10): warning C4098: 'BOJ11651': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(688,10): warning C4098: 'BOJ1010': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(719,10): warning C4098: 'BOJ11866': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(730,10): warning C4098: 'BOJ1676': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(793,10): warning C4098: 'BOJ10815': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(762,12): warning C4101: 'cmp' :참조되지 않은 지역 변수입니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(822,10): warning C4098: 'BOJ1476': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(834,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(850,10): warning C4098: 'BOJ1475': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(874,10): warning C4098: 'BOJ1094': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(889,7): warning C4013: 'gets'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(927,10): warning C4098: 'BOJ11723': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(948,10): warning C4098: 'BOJ1789': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(995,10): warning C4098: 'BOJ17478': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S5.c(760): warning C4715: 'binarySearch': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(12,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(51,10): warning C4098: 'BOJ4673': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(72,10): warning C4098: 'BOJ1978': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(101,10): warning C4098: 'BOJ1316': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(112,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(130,10): warning C4098: 'BOJ2941': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(200,10): warning C4098: 'BOJ2751': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(222,10): warning C4098: 'BOJ2869': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(261,10): warning C4098: 'BOJ7568': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(333,10): warning C4098: 'BOJ1181': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(362,10): warning C4098: 'BOJ2581': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(373,20): warning C4018: '<=': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(383,10): warning C4098: 'BOJ1427': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(469,10): warning C4098: 'BOJ11650': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(483,20): warning C4013: 'Partition'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(537,10): warning C4098: 'BOJ10814': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(566,10): warning C4098: 'BOJ1436': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(575,7): warning C4101: 'tmp' :참조되지 않은 지역 변수입니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(652,10): warning C4098: 'BOJ11651': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(672,10): warning C4098: 'BOJ1010': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(703,10): warning C4098: 'BOJ11866': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(714,10): warning C4098: 'BOJ1676': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(777,10): warning C4098: 'BOJ10815': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(746,12): warning C4101: 'cmp' :참조되지 않은 지역 변수입니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(806,10): warning C4098: 'BOJ1476': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(818,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(834,10): warning C4098: 'BOJ1475': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(858,10): warning C4098: 'BOJ1094': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(873,7): warning C4013: 'gets'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(911,10): warning C4098: 'BOJ11723': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(932,10): warning C4098: 'BOJ1789': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(979,10): warning C4098: 'BOJ17478': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(1011,10): warning C4098: 'BOJ11004': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(1037,10): warning C4098: 'BOJ9655': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S5.c(744): warning C4715: 'binarySearch': 모든 제어 경로에서 값을 반환하지는 않습니다.
   C.vcxproj -> C:\Users\USER\Desktop\BOJ\C\Debug\C.exe
