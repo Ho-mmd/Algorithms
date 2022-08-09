@@ -5,7 +5,6 @@
 int main(void)
 {
 	
-
 }
 
 //https://www.acmicpc.net/problem/4673
@@ -1089,6 +1088,41 @@ void BOJ11728() {
 	free(arr);
 	free(arr1);
 	free(arr2);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/2740
+void BOJ2740() {
+	int a, b, c, d, tot;
+
+	int mtx1[100][100];
+	int mtx2[100][100];
+
+	scanf("%d%d", &a, &b);
+
+	for (int i = 0; i < a; i++) {
+		for (int j = 0; j < b; j++)
+			scanf("%d", &mtx1[i][j]);
+	}
+
+	scanf("%d%d", &c, &d);
+
+	for (int i = 0; i < c; i++) {
+		for (int j = 0; j < d; j++)
+			scanf("%d", &mtx2[i][j]);
+	}
+
+	for (int i = 0; i < a; i++) {
+		for (int j = 0; j < d; j++) {
+			tot = 0;
+			for (int k = 0; k < b; k++) {
+				tot += mtx1[i][k] * mtx2[k][j];
+			}
+			printf("%d ", tot);
+		}
+		printf("\n");
+	}
 
 	return 0;
 }
