@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 int main(void) {
-	//17256
+	//18301
 }
 
 //https://www.acmicpc.net/problem/2557
@@ -517,9 +517,9 @@ void BOJ15439(void) {
 
 //https://www.acmicpc.net/problem/20492
 void BOJ20492(void) {
-	long a;
-	scanf("%ld", &a);
-	printf("%ld %ld", a * 78 / 100, a * 80 / 100 + a * 20 / 100 * 78 / 100);
+	int a;
+	scanf("%d", &a);
+	printf("%d %d", a * 78 / 100, a * 80 / 100 + a * 20 / 100 * 78 / 100);
 	return 0;
 }
 
