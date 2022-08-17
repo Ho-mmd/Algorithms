@@ -1265,3 +1265,19 @@ void BOJ2161() {
 	return 0;
 }
 
+//https://www.acmicpc.net/problem/9656
+void BOJ9656() {
+	int n, ans;
+
+	scanf("%d", &n);
+
+	ans = n % 4;
+
+	if (ans == 1 || ans == 3)
+		printf("CY");
+	else
+		printf("SK");
+
+	return 0;
+}
+
