@@ -1281,3 +1281,86 @@ void BOJ9656() {
 	return 0;
 }
 
+//https://www.acmicpc.net/problem/8979
+void BOJ8979() {
+	int arr[1001][5] = { 0 }, N, K, gold = 1, silver = 0, bronze = 0;
+	int flag;
+
+	scanf("%d%d", &N, &K);
+
+	for (int i = 0; i < N; i++) {
+		for (int j = 0; j < 4; j++) {
+			scanf("%d", &arr[i][j]);
+		}
+		if (arr[i][0] == K)
+			flag = i;
+	}
+
+	for (int i = 0; i < N; i++) {
+		if (arr[i][1] > arr[flag][1])
+			gold++;
+
+		else if (arr[i][1] == arr[flag][1] && arr[i][2] > arr[flag][2])
+			silver++;
+
+		else if (arr[i][1] == arr[flag][1] && arr[i][2] == arr[flag][2] && arr[i][3] > arr[flag][3])
+			bronze++;
+	}
+
+	printf("%d", gold + silver + bronze);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/9625
+void BOJ9625() {
+	int n;
+	int arr[4] = { 1, 0, 0, 0 };
+
+	scanf("%d", &n);
+
+	for (int i = 0; i < n; i++) {
+		arr[3] += arr[0];
+		arr[2] += arr[1];
+		arr[3] += arr[1];
+
+		arr[0] = arr[2];
+		arr[1] = arr[3];
+		arr[2] = 0;
+		arr[3] = 0;
+	}
+
+	printf("%d %d", arr[0], arr[1]);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/11931
+#include <stdlib.h>
+int compare5(const void* a, const void* b) {
+	int num1 = *(int*)a;
+	int num2 = *(int*)b;
+
+	if (num1 > num2)
+		return -1;
+	else if (num1 < num2)
+		return 1;
+	else
+		return 0;
+}
+void BOJ11931() {
+	int n;
+	int arr[1000001];
+
+	scanf("%d", &n);
+
+	for (int i = 0; i < n; i++)
+		scanf("%d", &arr[i]);
+
+	qsort(arr, n, sizeof(int), compare5);
+
+	for (int i = 0; i < n; i++)
+		printf("%d\n", arr[i]);
+
+	return 0;
+}

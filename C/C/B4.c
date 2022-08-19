@@ -1,3 +1,11 @@
+#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+
+int main() {
+	//9498
+}
+
 //https://www.acmicpc.net/problem/1008
 void BOJ1008() {
 	int a, b;
