@@ -3,28 +3,35 @@
 #include <stdio.h>
 
 int main(void) {
-	//fin
+	
 }
 
 //https://www.acmicpc.net/problem/2557
 void BOJ2557(void) {
 	printf("Hello World!");
+
 	return 0;
 }
 
 //https://www.acmicpc.net/problem/1000
 void BOJ1000(void) {
 	int a, b;
+
 	scanf("%d %d", &a, &b);
+
 	printf("%d", a + b);
+
 	return 0;
 }
 
 //https://www.acmicpc.net/problem/1001
 void BOJ1001(void) {
 	int a, b;
+
 	scanf("%d %d", &a, &b);
+
 	printf("%d", a - b);
+
 	return 0;
 }
 
@@ -101,7 +108,7 @@ void BOJ8393(void) {
 void BOJ11654(void) {
 	char c;
 	scanf("%c", &c);
-	printf("%d", (int)c);
+	printf("%d", c);
 	return 0;
 }
 
@@ -182,8 +189,12 @@ void BOJ10757(void) {
 //https://www.acmicpc.net/problem/3046
 void BOJ3046(void) {
 	int a, b;
+
 	scanf("%d %d", &a, &b);
+
 	printf("%d", b * 2 - a);
+
+	return 0;
 }
 
 //https://www.acmicpc.net/problem/2914
@@ -191,6 +202,8 @@ void BOJ2914(void) {
 	int a, b;
 	scanf("%d %d", &a, &b);
 	printf("%d", (b - 1) * a + 1);
+
+	return 0;
 }
 
 //https://www.acmicpc.net/problem/5338
@@ -200,6 +213,8 @@ void BOJ5338(void) {
 	printf("'-..-'|_.-;;-._|\n");
 	printf("'-..-'|   ||   |\n");
 	printf("'-..-'|_.-''-._|");
+
+	return 0;
 }
 
 //https://www.acmicpc.net/problem/1550
@@ -207,6 +222,8 @@ void BOJ1550(void) {
 	int a;
 	scanf("%x", &a);
 	printf("%d", a);
+
+	return 0;
 }
 
 //https://www.acmicpc.net/problem/10699
@@ -257,6 +274,7 @@ void BOJ9653(void) {
 	printf("88 8888 88 88   88  88888    8888\n");
 	printf(" 888  888 888888888 88  88      88\n");
 	printf("  88  88  88     88 88   88888888\n");
+
 	return 0;
 }
 
@@ -413,9 +431,12 @@ void BOJ16430(void) {
 
 //https://www.acmicpc.net/problem/15964
 void BOJ15964(void) {
-	int a, b;
-	scanf("%d %d", &a, &b);
-	printf("%d", (a + b) * (a - b));
+	long long a, b;
+
+	scanf("%lld %lld", &a, &b);
+
+	printf("%lld", (a + b) * (a - b));
+
 	return 0;
 }
 

@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 int main() {
-	//1712
+	//5543
 }
 
 //https://www.acmicpc.net/problem/1008
@@ -20,7 +20,9 @@ void BOJ1008() {
 //https://www.acmicpc.net/problem/9498
 void BOJ9498() {
 	int a;
+
 	scanf("%d", &a);
+
 	if (a >= 90)
 		printf("A");
 	else if (a >= 80)
@@ -38,7 +40,9 @@ void BOJ9498() {
 //https://www.acmicpc.net/problem/1330
 void BOJ1330() {
 	int a, b;
+
 	scanf("%d %d", &a, &b);
+
 	if (a > b)
 		printf(">");
 	else if (a == b)
@@ -52,8 +56,10 @@ void BOJ1330() {
 //https://www.acmicpc.net/problem/2753
 void BOJ2753(){
 	int a;
+
 	scanf("%d", &a);
-	if (((a % 4 == 0) & (a % 100 != 0)) || ((a % 4 == 0) & (a % 400 == 0)))
+
+	if (((a % 4 == 0) & (a % 100 != 0)) || (a % 400 == 0)))
 		printf("1");
 	else
 		printf("0");
@@ -85,7 +91,9 @@ void BOJ2588(){
 //https://www.acmicpc.net/problem/14681
 void BOJ14681(){
 	int a, b;
+
 	scanf("%d %d", &a, &b);
+
 	if (a > 0 && b > 0)
 		printf("1");
 	else if (a < 0 && b > 0)
