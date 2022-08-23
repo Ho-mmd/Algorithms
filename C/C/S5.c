@@ -2,9 +2,30 @@
 
 #include <stdio.h>
 
+long long memo[10001] = { 0, 1 };
+
+long long fibo(int n) {
+	if (n < 2)
+		return memo[n];
+	else {
+		if (memo[n] != 0)
+			return memo[n];
+		else {
+			memo[n] = fibo(n - 1) + fibo(n - 2);
+			return memo[n];
+		}
+	}
+}
+
 int main(void)
 {
-	
+	int n;
+
+	scanf("%d", &n);
+
+	printf("%lld", fibo(n));
+
+	return 0;
 }
 
 //https://www.acmicpc.net/problem/4673

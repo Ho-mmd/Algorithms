@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 int main() {
-	//5543
+	//10797
 }
 
 //https://www.acmicpc.net/problem/1008
