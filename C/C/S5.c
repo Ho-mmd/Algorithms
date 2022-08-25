@@ -2,30 +2,9 @@
 
 #include <stdio.h>
 
-long long memo[10001] = { 0, 1 };
-
-long long fibo(int n) {
-	if (n < 2)
-		return memo[n];
-	else {
-		if (memo[n] != 0)
-			return memo[n];
-		else {
-			memo[n] = fibo(n - 1) + fibo(n - 2);
-			return memo[n];
-		}
-	}
-}
-
 int main(void)
 {
-	int n;
-
-	scanf("%d", &n);
-
-	printf("%lld", fibo(n));
-
-	return 0;
+	
 }
 
 //https://www.acmicpc.net/problem/4673
@@ -1432,6 +1411,67 @@ void BOJ5635() {
 	printf("%s\n%s", arr[max].name, arr[min].name);
 
 	free(arr);
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/14916
+void BOJ14916() {
+	int n, Fn, Tn, flag = 0;
+
+	scanf("%d", &n);
+
+	if (n < 5) {
+		if (n % 2 == 0)
+			printf("%d", n / 2);
+		else
+			printf("-1");
+	}
+	else {
+		Fn = n / 5;
+
+		while (Fn != -1) {
+			Tn = (n - Fn * 5) / 2;
+			if (n - Fn * 5 - Tn * 2 == 0) {
+				flag = 1;
+				break;
+			}
+			Fn--;
+		}
+
+		if (flag == 1)
+			printf("%d", Fn + Tn);
+		else
+			printf("-1");
+	}
+
+	return 0;
+}
+
+//https://www.acmicpc.net/problem/14490
+int GCD(int a, int b) {
+	int x = a, y = b, z;
+
+	while (y) {
+		z = x % y;
+		x = y;
+		y = z;
+	}
+
+	return x;
+}
+void BOJ14490() {
+	int a, b, tmp;
+	char c;
+
+	scanf("%d%c%d", &a, &c, &b);
+
+	if (a > b)
+		tmp = GCD(a, b);
+	else
+		tmp = GCD(b, a);
+
+	printf("%d:%d", a / tmp, b / tmp);
 
 	return 0;
 }
