@@ -21,7 +21,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="S5.c">
+    <ClCompile Include="S4.c">
       <Filter>Silver</Filter>
     </ClCompile>
   </ItemGroup>
