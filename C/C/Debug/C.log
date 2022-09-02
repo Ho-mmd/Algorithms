@@ -1,4 +1,5 @@
 ﻿  S4.c
-C:\Users\USER\Desktop\BOJ\C\C\S4.c(80,10): warning C4098: 'BOJ1051': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\USER\Desktop\BOJ\C\C\S4.c(56,6): warning C4101: 'c' :참조되지 않은 지역 변수입니다.
+C:\Users\USER\Desktop\BOJ\C\C\S4.c(71,10): warning C4098: 'BOJ1051': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S4.c(47,6): warning C4101: 'c' :참조되지 않은 지역 변수입니다.
+C:\Users\USER\Desktop\BOJ\C\C\S4.c(117,10): warning C4098: 'BOJ1026': 'void' 함수에서 값을 반환하고 있습니다.
   C.vcxproj -> C:\Users\USER\Desktop\BOJ\C\Debug\C.exe
