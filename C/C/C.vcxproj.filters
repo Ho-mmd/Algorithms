@@ -24,8 +24,5 @@
     <ClCompile Include="S2.c">
       <Filter>Silver</Filter>
     </ClCompile>
-    <ClCompile Include="S3.c">
-      <Filter>Silver</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>
