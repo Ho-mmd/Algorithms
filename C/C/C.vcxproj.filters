@@ -21,8 +21,11 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="S2.c">
-      <Filter>Silver</Filter>
+    <ClCompile Include="B1.c">
+      <Filter>Bronze</Filter>
+    </ClCompile>
+    <ClCompile Include="B4.c">
+      <Filter>Bronze</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
