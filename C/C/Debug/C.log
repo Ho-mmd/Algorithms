@@ -1,2 +1,7 @@
-﻿  B1.c
+﻿  S2.c
+C:\Users\USER\Desktop\BOJ\C\C\S2.c(42,8): warning C4778: 'scanf' : 서식 문자열 '%'이(가) 종결되지 않았습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S2.c(87,13): warning C4098: 'BOJ1024': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S2.c(95,10): warning C4098: 'BOJ1024': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S2.c(139,10): warning C4098: 'BOJ1124': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\USER\Desktop\BOJ\C\C\S2.c(35): warning C4715: 'CheckAr': 모든 제어 경로에서 값을 반환하지는 않습니다.
   C.vcxproj -> C:\Users\USER\Desktop\BOJ\C\Debug\C.exe
