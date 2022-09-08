@@ -4,7 +4,7 @@
 
 int main(void)
 {
-	
+	//Gold exit
 }
 
 //https://www.acmicpc.net/problem/1024
