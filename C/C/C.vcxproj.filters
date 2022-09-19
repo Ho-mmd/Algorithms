@@ -19,10 +19,13 @@
     <Filter Include="Silver">
       <UniqueIdentifier>{1baae03f-4659-4f1e-a344-acc38e79fef7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Gold">
+      <UniqueIdentifier>{ed575518-15d5-47f6-b17d-9a36de2dbee6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="S2.c">
-      <Filter>Silver</Filter>
+    <ClCompile Include="G5.c">
+      <Filter>Gold</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
