@@ -5,37 +5,35 @@
 #include <stdlib.h>
 
 int compare(const void* a, const void* b) {
-	if (*(char*)a - *(char*)b > 0)
-		return 1;
-	else if (*(char*)a == *(char*)b)
+	if (*(int*)a > *(int*)b)
+		return -1;
+	else if (*(int*)a == *(int*)b)
 		return 0;
-	else return -1;
+	else
+		return 1;
 }
+
 
 int main(void)
 {
-	int L, C;
-	char arr[16];
+	int arr[3000];
+	int ans[3000];
+	int n, m, sum = 0;
 
-	scanf("%d%d", &L, &C);
-	
-	for (int i = 0; i < C; i++) {
-		getchar();
-		scanf("%c", &arr[i]);
-	}
-			
-	/*for (int i = 0; i < C; i++)
-		printf("%c", arr[i]);*/
+	scanf("%d%d", &n, &m);
 
-	qsort(arr, C, sizeof(char), compare);
+	for (int i = 0; i < m; i++)
+		scanf("%d", &arr[i]);
 
+	for (int j = m - 1; j > 0; j--)
+		ans[j] = arr[j] - arr[j - 1];
 
-	for (int k = 0; k <= C - L; k++) {
-		for (int i = k; i < k + L - 1; i++)
-			printf("%c", arr[i]);
-		printf("%c\n", arr[k + L - 1]);
-	}
-	
+	qsort(ans, m - 1, sizeof(int), compare);
+
+	for (int i = 0; i < m - 1; i++)
+		sum += ans[i];
+
+	printf("%d", sum);
 
 	return 0;
 }

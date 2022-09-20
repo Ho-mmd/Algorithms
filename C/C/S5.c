@@ -4,7 +4,7 @@
 
 int main(void)
 {
-	
+
 }
 
 //https://www.acmicpc.net/problem/4673
