@@ -24,8 +24,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="S5.c">
-      <Filter>Silver</Filter>
+    <ClCompile Include="prepared.c">
+      <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
