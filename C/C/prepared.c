@@ -2,33 +2,35 @@
 
 #include <stdio.h>
 
-void q(int arr[], int start, int end) {
-	if (start >= end)
-		return;
+void q(int* arr, int start, int end) {
+    if (start >= end)
+        return;
 
-	int pivot = start;
-	int left = start + 1;
-	int right = end;
+    int pivot = start;
+    int left = start + 1;
+    int right = end;
     int tmp;
 
-	while (left <= right) {
-        while (left <= end && arr[left] <= arr[pivot])
+    while (left <= right) {
+        while (left <= end && arr[left] <= arr[pivot]) {
             left += 1;
-
-        while (right > start && arr[right] >= arr[pivot])
-            right -= 1;
-
-        if (left > right) {
-            tmp = arr[right];
-            arr[right] = arr[pivot];
-            arr[pivot] = tmp;
         }
-        else {
+        while (right > start && arr[right] >= arr[pivot]) {
+            right -= 1;
+        }
+        
+        if (left <= right) {
             tmp = arr[left];
             arr[left] = arr[right];
             arr[right] = tmp;
         }
-	}
+        else {
+            tmp = arr[right];
+            arr[right] = arr[pivot];
+            arr[pivot] = tmp;
+        }
+    }
+
     q(arr, start, right - 1);
     q(arr, right + 1, end);
 }
