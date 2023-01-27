@@ -1,7 +1,7 @@
 #https://www.acmicpc.net/problem/2566
 
 max = 0;
-x, y = 0, 0;
+x, y = 1, 1;
 
 for i in range(9):
     a = list(map(int, input().split()));
