@@ -19,6 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="1037.c" />
+    <ClCompile Include="B1.c" />
     <ClCompile Include="prepared.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

@@ -27,5 +27,11 @@
     <ClCompile Include="prepared.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="B1.c">
+      <Filter>Bronze</Filter>
+    </ClCompile>
+    <ClCompile Include="1037.c">
+      <Filter>Bronze</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
