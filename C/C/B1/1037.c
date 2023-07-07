@@ -7,6 +7,7 @@
 int main() {
 	int num;
 	int N, max = 0, min = 1000001;
+	int ans;
 
 	scanf("%d", &N);
 
@@ -20,7 +21,9 @@ int main() {
 			min = num;
 	}
 
-	printf("%d", max * min);
+	ans = max * min;
+	
+	printf("%d", ans);
 
 	return 0;
 }
