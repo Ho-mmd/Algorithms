@@ -1,2 +1,2 @@
 # BOJ
-BOJ 공부
+Studying BOJ + Algorithm
