@@ -1,0 +1,9 @@
+*.vs
+*.vscode
+*.out
+*.metadata
+*.sln
+/x64
+/Debug
+*.vcxproj
+
