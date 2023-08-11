@@ -5,5 +5,8 @@
 *.sln
 x64/
 Debug/
-*.vcxproj
+*.vcxproj.*
+*.settings
+*.classpath
+*.project
 
