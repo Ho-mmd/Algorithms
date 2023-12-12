@@ -1,5 +1,11 @@
 #include <iostream>
 
+/* 
+* swap(_Tp& __a, _Tp& __b)
+* Dynamic Allocation
+    new
+    delete
+*/
 int main() {
     int N, M, i, j;
 
