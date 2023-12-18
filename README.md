@@ -1,2 +1,3 @@
 # BOJ
-Studying BOJ + Algorithm
+
+Solve coding and algorithmic problems 
