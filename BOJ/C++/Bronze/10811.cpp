@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>
 
 /*** vector
  * Same as dynamic arrays with the ability to resize itself automatically 
@@ -13,7 +12,6 @@ int main() {
 
     std::vector<int> tmp;
     std::vector<int> ans;
-    std::vector<int>::iterator ptr; 
 
     std::cin >> N >> M;
 
