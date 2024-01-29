@@ -29,7 +29,10 @@ int main() {
 
     for(int i = 0; i < M; i++) {
         for(int j = 0; j < N; j++) {
-            std::cout << arr1[i][j] + arr2[i][j] << " "; 
+            if(j == N - 1)
+                std::cout << arr1[i][j] + arr2[i][j];
+            else
+                std::cout << arr1[i][j] + arr2[i][j] << " "; 
         }
         std::cout << "\n";
     }
