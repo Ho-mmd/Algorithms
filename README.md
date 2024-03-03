@@ -1,4 +1,4 @@
-# Solve coding and algorithmic problems 
+# Study Algorithms and Solve Problems 
 
 ### Baekjoon Online Judge : https://www.acmicpc.net/
   - BOJ step : https://www.acmicpc.net/step
