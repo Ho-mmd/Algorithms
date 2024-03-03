@@ -1,4 +1,4 @@
-### Time Complexity
+# Time Complexity
 
 -------------------------------
 
@@ -6,18 +6,18 @@ A type of computational complexity that describes the time required to execute a
 
 -------------------------------
 
-#### Big-O notation ( O(n) )
+## Big-O notation ( O(n) )
 
 -------------------------------
 
 Represents an algorithm's worst-case complexity
 
-##### Definition
+### Definition
 
 f(n) = O(g(n)), if there exists positive constant c, N0 such that 
 f(n) <= c * g(n) for all N >= N0
 
-##### Big-O Complexity
+### Big-O Complexity
 
 - O(1) 
 - O(log n)  
