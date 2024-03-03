@@ -26,3 +26,7 @@ f(n) <= c * g(n) for all N >= N0
 - O(n^2)
 - O(2^n)
 - O(n!)
+
+### Example
+- O(n^3 + n^2 + n + 1) -> O(n^3)
+- O(n + 2) -> O(n)
