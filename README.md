@@ -10,5 +10,6 @@
 	- Divisor, Multiple and Prime Numbers : ~ 21/2/24
 	- Geometry: Rectangles and Triangles : ~ 2/3/24
 	- Time Complexity : ~ 3/3/24
+	- Brute Force : ~ 9/3/24
 
 ### Programmers : https://programmers.co.kr/
