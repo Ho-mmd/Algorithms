@@ -11,6 +11,6 @@
 	- Geometry: Rectangles and Triangles : ~ 2/3/24
 	- Time Complexity : ~ 3/3/24
 	- Brute Force : ~ 9/3/24
-	- Sort : 
+	- Sort : ~ 16/3/24 
 
 ### Programmers : https://programmers.co.kr/
