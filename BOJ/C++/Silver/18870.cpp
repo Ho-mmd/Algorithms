@@ -26,5 +26,7 @@ int main() {
 		for(int i = 0; i < N; i++)
 				std::cout << ans.find(tmp[i])->second << " ";
 
+		delete[] tmp;
+
 		return 0;
 }
