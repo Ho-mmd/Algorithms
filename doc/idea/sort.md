@@ -30,7 +30,7 @@ void selectionSort(int arr[], int n)
 
 -----------------------------------------
 
-## Insertion Sort
+## Insertion Sort (n^2)
 
 - Virtually split into a sorted and an unsorted part 
 - Values from the unsorted part are picked and placed in the correct position
@@ -54,7 +54,7 @@ void insertionSort(int arr[], int n)
 
 -----------------------------------------
 
-## Bubble Sort
+## Bubble Sort (n^2)
 
 - Repeatedly swapping the adjacent elements if they are in the wrong order
 
@@ -80,7 +80,7 @@ void bubbleSort(int arr[], int n)
 
 -----------------------------------------
 
-## Merge Sort
+## Merge Sort (nlogn)
 
 - Dividing an array into smaller subarrays, sorting each subarray
 - Then merging the sorted subarrays back together to form the final sorted array
@@ -149,7 +149,7 @@ void mergeSort(int array[], int const begin, int const end)
 
 -----------------------------------------
 
-## Heap Sort
+## Heap Sort (nlogn)
 
 - Based on binary heap data structure
 - Find the minimum element and place the minimum element at the beginning
@@ -203,7 +203,7 @@ void heapSort(int arr[], int N)
 
 -----------------------------------------
 
-## Quick Sort
+## Quick Sort (n^2 / nlogn)
 
 - Based on divide and conquer 
 - Picks an element as a pivot 
@@ -242,3 +242,41 @@ void quickSort(int arr[], int low, int high)
 ```
 
 -----------------------------------------
+
+## Counting Sort (n + k)
+
+- Non-comparison-based sorting algorithm
+- Works well when there is limited range of input values
+- Count the frequency of each distinct element in the input array 
+- Use information to place the elements in their correct sorted positions
+
+```
+void countSort(int[] inputArray) {
+		int N = inputArray.length;
+        int M = 0;
+ 
+        for (int i = 0; i < N; i++) {
+            M = Math.max(M, inputArray[i]);
+        }
+ 
+        int *countArray = new int[M + 1];
+ 
+        for (int i = 0; i < N; i++) {
+            countArray[inputArray[i]]++;
+        }
+ 
+        for (int i = 1; i <= M; i++) {
+            countArray[i] = countArray[i - 1] + countArray[i];
+        }
+ 
+        int *outputArray = new int[N];
+ 
+        for (int i = N - 1; i >= 0; i--) {
+            outputArray[countArray[inputArray[i]] - 1] = inputArray[i];
+            countArray[inputArray[i]]--;
+        }
+		
+		delete[] countArray;
+		// delete[] outputArray
+}
+```
