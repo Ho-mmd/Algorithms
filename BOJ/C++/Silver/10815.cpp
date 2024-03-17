@@ -1,35 +1,29 @@
 #include <iostream>
-#include <map>
+#include <set>
 
 int main() {
-    int         N, M, num;
+		std::set<int> card;
+		int N, M, k;
 
-    std::cin    >>          N;
+		std::ios_base::sync_with_stdio(false);
+		std::cin.tie(NULL);
+
+		std::cin >> N;
+
+		for(int i = 0 ; i < N; i++) {
+				std::cin >> k;
+				card.insert(k);
+		}
+
+		std::cin >> M;
+
+		for(int i = 0; i < M; i++) {
+				std::cin >> k;
+				if(card.count(k) == 1)
+						std::cout << 1 << " ";
+				else
+						std::cout << 0 << " ";
+		}
     
-    std::map<int, int>m1;
-    // std::map<int, int>m2;
-    std::map<int, int>::iterator it;
-    
-    for(int i = 0; i < N; i++) {
-                std::cin    >>          num;
-                m1.insert({num, 0});
-    }
-
-    std::cin    >>          M;
-
-    for(int i = 0; i < M; i++) {
-                std::cin    >>          num;
-                it          =           m1.find(num);
-                if(it != m1.end()) 
-                            std::cout    <<     "1 "; 
-                else 
-                            std::cout    <<     "0 "; 
-    }
-
-    // for(it = m2.begin(); it != m2.end(); ++it) 
-    //             std::cout << it->second << " ";
-
-    std::cout << std::endl;
-
     return 0;
 }
