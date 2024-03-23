@@ -15,7 +15,7 @@ void DFS(int n, node, std::vector<int> visited) {
 
         for(int i = 0; i < node.size(); i++) {  
                 if(visited[i] != 1)
-                        DFS(i);
+                        DFS(i, node, visited);
         }
 }
 
