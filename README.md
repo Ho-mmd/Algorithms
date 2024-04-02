@@ -13,5 +13,6 @@
 	- Brute Force : ~ 9/3/24
 	- Sort : ~ 16/3/24 
 	- Set and Map : ~ 26/3/24
+	- Divisor, Multiple and Prime Numbers2 : ~2/4/24
 
 ### Programmers : https://programmers.co.kr/
