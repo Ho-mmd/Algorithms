@@ -1,0 +1,1 @@
+- When you use call by reference, the time is reduced because no copying of the object occurs
