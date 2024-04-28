@@ -1,1 +1,2 @@
 - When you use call by reference, the time is reduced because no copying of the object occurs
+- In most of use case, Vector > Array, Switch to array when performance(Speed ......) improvement is needed
