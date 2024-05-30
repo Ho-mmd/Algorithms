@@ -50,3 +50,35 @@ int main()
 ```
 
 -----------------------------------------
+
+### LIS (Longest Increasing Subsequence)
+
+- Among the partial sequences created by selecting some elements of an array
+- A partial sequence satisfies the condition that each element is greater than the previous element 
+- A partial sequence has the maximum length
+- O(N^2)
+
+```
+#include <iostream>
+
+int main()
+{
+    int length = 1;
+	int A[5] = {1, 7, 3, 2, 5}, dp[5];
+
+    for(int i = 0; i < 5; i++) {
+			dp[i] = 1;
+
+			for(int j = 0; j < i; j++) {
+					if(A[j] < A[i] && dp[i] <= dp[j]) 
+							dp[i] = dp[j] + 1;
+					if(length < dp[i])
+							length = dp[i];
+			}
+	}
+
+    std::cout << length;
+
+    return 0;
+}
+```
