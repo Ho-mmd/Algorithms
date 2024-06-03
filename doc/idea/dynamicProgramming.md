@@ -82,3 +82,37 @@ int main()
     return 0;
 }
 ```
+
+-----------------------------------------
+
+### LCS (Longest Common Subsequence)
+
+- The longest subsequence among subsequences when comparing two strings A and B
+
+```
+#include <iostream>
+#include <string>
+
+int main()
+{
+    int dp[1001][1001] = {0, };
+	std::string A = "ABCDE", B = "EDBAC";
+
+    for(int i = 0; i < A.length(); i++) {
+			for(int j = 0; j < B.length(); j++) {
+                    // i = 0 || j = 0 -> dp[i][j] = 0
+                    // i, j > 0 && A[i] == B[j] -> dp[i][j] = dp[i - 1][j - 1] + 1;
+                    // i, j > 0 && A[i] != B[j] -> dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);
+
+					if(A[i] == B[j]) 
+							dp[i + 1][j + 1] = dp[i][j] + 1;
+					else
+							dp[i + 1][j + 1] = std::max(dp[i + 1][j], dp[i][j + 1]);
+			}
+	}
+
+    std::cout << dp[A.length()][B.length()];
+
+    return 0;
+}
+```
