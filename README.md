@@ -19,7 +19,7 @@
 	- Advance2 : ~/26/4/24 
     - Recursion : ~/5/5/24
     - BackTracking : ~/9/5/24
-    - DynamicProgramming : ~///
+    - DynamicProgramming : ~/5/6/24
 
 
 ### Programmers : https://programmers.co.kr/
