@@ -20,6 +20,7 @@
     - Recursion : ~/5/5/24
     - BackTracking : ~/9/5/24
     - DynamicProgramming : ~/5/6/24
+    - Prefix Sum : ~
 
 
 ### Programmers : https://programmers.co.kr/
