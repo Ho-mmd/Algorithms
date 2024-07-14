@@ -21,6 +21,7 @@
     - BackTracking : ~/9/5/24
     - DynamicProgramming : ~/5/6/24
     - Prefix Sum : ~/13/7/24
+    - Greedy Algorithms : ~14/7/24
 
 
 ### Programmers : https://programmers.co.kr/
