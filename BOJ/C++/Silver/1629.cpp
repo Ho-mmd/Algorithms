@@ -6,8 +6,6 @@ long long A, B, C, mod;
 long long Multi(long long b) {
 		if(b == 0)
 				return 1;
-		else if(b == 1)
-				return A % C;
 
 		mod = Multi(b / 2) % C;
 
