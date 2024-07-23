@@ -25,3 +25,18 @@
         - 10/3 mod 11 = (10 * 4) mod 11 = 7 mod 11
 
 ------------------------------------------
+
+# Fermat's little theorem
+
+- If p is prime and a is an integer not divisible by p, then
+    - a^(p-1) ≡ 1 (mod p)
+- Furthermore, for every integer a we have
+    - a^p ≡ a (mod p)
+
+- i.g) 6^222 mod 11
+        - 6^(11 - 1) ≡ 1 (mod 11)
+        - 6^222 ≡ 6^(22 * 10) * 6^2
+        - 6^222 ≡ 1^22 * 6^2 (mod 11)
+        - 6^222 ≡ 36 (mod 11)
+        - 6^222 ≡ 3 (mod 11)
+    
