@@ -1,3 +1,5 @@
+- If it is a problem related to formulas, solve and organize it if possible !!!
+
 # Prefix Sum
 
 - Sum(i ... j) = Sum(j) - Sum(i + 1)
