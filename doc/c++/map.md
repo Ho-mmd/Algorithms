@@ -2,6 +2,7 @@
 
 - Associative container
 - Store elements in a mapped fashion
+- Each elements is stored in memory independently
 - Each element has a key value and a mapped value
 - No two mapped values can have the same key values
 - Store data in ascending order of key values
