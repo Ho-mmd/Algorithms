@@ -22,7 +22,7 @@
     - DynamicProgramming : ~/5/6/24
     - Prefix Sum : ~/13/7/24
     - Greedy Algorithms : ~14/7/24
-    - Divide and Conquer : 
+    - Divide and Conquer : ~8/8/24 
 
 
 ### Programmers : https://programmers.co.kr/
