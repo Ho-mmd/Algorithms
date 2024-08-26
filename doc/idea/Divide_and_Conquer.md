@@ -24,6 +24,8 @@
 
 ### Binary search
 
+- Find a Clear Reference Value!
+
 ---------------------------------------
 
 ### Power problem
