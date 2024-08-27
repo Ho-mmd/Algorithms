@@ -23,7 +23,7 @@
     - Prefix Sum : ~/13/7/24
     - Greedy Algorithms : ~14/7/24
     - Divide and Conquer : ~8/8/24 
-	- Binary Search : ~
+	- Binary Search : ~27/8/24
 
 
 ### Programmers : https://programmers.co.kr/
