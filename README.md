@@ -24,6 +24,7 @@
     - Greedy Algorithms : ~14/7/24
     - Divide and Conquer : ~8/8/24 
 	- Binary Search : ~27/8/24
+	- Priority Queue : ~ 
 
 
 ### Programmers : https://programmers.co.kr/
